@@ -1,0 +1,388 @@
+@font-face {
+    font-family: Fredoka One;
+    src: url(../fonts/FredokaOne-Regular.ttf);
+  }
+
+.footer{
+    // padding: 3rem 1rem 2rem 1.5rem;
+    background-color: $clr-purple;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &__main{
+        padding: 50px 15px 0px 15px;
+
+    }
+    &__links{
+        display: flex;
+        flex-wrap: wrap;
+        // margin-bottom: 3rem;
+        &__item{
+            &:first-child{
+                margin-bottom: 20px;
+
+                width: 50%;
+            }
+            &:nth-child(2){
+                margin-bottom: 20px;
+                width: 50%;
+            }
+            &:nth-child(3){
+                width: 100%;
+            }
+            h1{
+                font-family: Fredoka One;
+                font-size: 2rem;
+                color: $clr-light ;
+                // margin: 1.5rem 0;
+                margin-bottom: 15px;
+            }
+            ul{ 
+                li{
+                    &:hover a{
+                        color: $clr-blue;
+                    }
+                    margin-bottom: 11px;
+                    a{
+                        color: $clr-light ;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 1.4rem;
+                        line-height: 1.2em;
+                        text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+                        fill: #FFFFFF;
+                        color: #FFFFFF;
+                        background-color: #02010100;
+                        padding: 0px 0px 0px 0px;
+                    }
+                }
+            }
+        }
+    }
+    &__contacts{
+        width: 100%;
+        line-height: 1.6;
+        text-align: center;
+        padding-top: 20px;
+        p{
+            color: $clr-light;
+            font-size: 1.6rem;
+            font-family: 'Open Sans', sans-serif;
+        }
+        &__img{
+            // margin: 0 0 -1rem 0;
+
+        }
+        &__where{
+            margin-bottom: 1.5rem;
+            line-height: 1;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        &__links{
+            font-weight: 600;
+            margin: 10px 0px 5px 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            a{
+                text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+                &:hover{
+                    color: $clr-blue;
+                }
+                color: $clr-light;
+                font-size: 2rem;
+                font-family: Fredoka One;
+                &:last-child{
+                    font-size: 1.6rem;
+                    color: $clr-blue;
+                    font-family: 'Open Sans', sans-serif;
+                    &:hover{
+                        color: $clr-light;
+                    }
+                }
+            }
+        }
+        
+    }
+    &__icons{
+        // margin: 2rem 0;
+        margin: 20px 0px 5px 0px;
+        ul{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: larger;
+            li{
+                a{
+                    &:hover i{
+                        color: $clr-blue;
+                    }
+                    i{
+                        color: $clr-light;
+
+                    }
+                }
+            }
+        }
+    }
+    &__copyright{
+        padding: 30px 15px 20px 15px;
+        display: flex;
+        font-size: 1.2rem;
+        justify-content: center;
+        font-family: 'Open Sans', sans-serif;
+        align-items: baseline;
+        p{
+            color: $clr-light;
+            font-weight: 100;
+            font-size: 1.2rem;
+        }
+        a{
+            color: $clr-blue;
+        }
+    }
+    &__chevronup{
+        display: none;
+    }
+
+    .test{
+        height: 100rem;
+        width: 100%;
+        color: violet;
+    }
+
+
+    @media screen and (min-width:767px){
+
+        &__wrapper{
+
+        }
+        &__main{
+            padding: 60px 20px 40px 20px;
+
+            // display: flex;
+            // grid-template-columns: 1.5fr 1fr;
+        }
+        &__links{
+            display: flex;
+            
+            &__item{
+                justify-content: flex-start;
+                // padding-left: 10px ;
+                &:first-child{
+                    width: 23%;
+                }
+                &:nth-child(2){
+                    width: 21%;
+                }
+                &:nth-child(3){
+                    width: 23%;
+                }
+                // &:last-child{
+                //     width: 33%;
+                // }
+                // &:last-child{
+                //     margin-right: 3rem;
+                // }
+                h1{
+                    // font-size: 2.4rem;
+                    // margin: 3rem 0;
+                    margin-bottom: 25px;
+                }
+                ul{
+                    li{
+                        &:hover a{
+                            color: $clr-blue;
+                        }
+                        margin-bottom: 1.5rem;
+                        a{
+                            color: $clr-light ;
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+        &__contacts{
+            width: 33%;
+            // padding-left: 10px ;
+            line-height: 1.6;
+            text-align: left;
+            padding: 0;
+            &__where{
+                margin-bottom: 1.5rem;
+                line-height: 1;
+            }
+            &__img{
+                padding: 0px 90px 0px 0px;                
+                img{
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+            
+            &__links{
+                font-weight: 600;
+                margin: 1rem 0;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                a{
+                    // font-size: 3rem;
+                    font-family: Fredoka One;
+                    &:last-child{
+                        // font-size: 1.8rem;
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                }
+            }
+            
+        }
+        &__icons{
+            margin: 2rem 0;
+            ul{
+                display: flex;
+                justify-content: start;
+                gap: 2rem;
+                // font-size: 2.5rem;
+                li{
+                    a{
+                        &:hover i{
+                            color: $clr-blue;
+                        }
+                        i{
+                            color: $clr-light;
+    
+                        }
+                    }
+                }
+            }
+        }
+        &__copyright{
+            padding: 21px 20px 10px 20px;
+            justify-content: flex-start;
+            p{
+                font-size: unset;
+            }
+        }
+    }
+
+
+    @media screen and (min-width:1025px){
+        &__wrapper{
+
+        }
+        &__main{
+            padding: 120px 0px 50px 0px;
+
+        }
+        &__links{
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr 2fr;
+            margin-bottom: 0;
+            &__item{
+                padding: 10px 27px 0px 27px;
+                &:first-child{
+                    width: unset;
+                }
+                &:nth-child(2){
+                    width: unset;
+                }
+                &:nth-child(3){
+                    width: unset;
+                }
+
+                h1{
+                    font-size: 2.4rem;
+                    margin-bottom: 45px;
+                }
+                ul{
+                    li{
+                        margin-bottom: 17px;
+
+                        &:hover a{
+                            color: $clr-blue;
+                            font-size: 18px;
+                            margin-bottom: 11px;
+                        }
+                    }
+                }
+            }
+        }
+        &__contacts{
+            width: unset;
+            padding: 3px 27px 0px 27px;
+            p{
+                &:nth-child(3){
+                    margin-top: 29px;
+                    font-size: 2.2rem;
+                }
+
+            }
+            &__where{
+                margin: -17px 0px 0px 0px;
+                p{
+                    font-size: 16px;
+                    line-height: 1em;
+                }
+            }
+            &__img{
+                padding: 0px 90px 0px 0px;                
+                img{
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+            
+            &__links{
+                margin: unset;
+                display: grid;
+                flex-direction: unset;
+                gap: unset;
+                margin-top: 10px;
+                a{
+                    font-family: Fredoka One;
+                    font-size: 30px;
+                    &:last-child{
+                        margin-top: 5px;
+                        font-size: 22px;
+                    }
+                }
+            }
+            
+        }
+        &__icons{
+            margin: 31px 0px 0px 0px;
+            ul{
+                gap: 4rem;
+                // font-size: 2.5rem;
+                li{
+                    a{
+
+                        i{
+                            font-size: 2.5rem;  
+                        }
+                    }
+                }
+            }
+        }
+        &__copyright{
+            margin-top: -7px;
+            margin-bottom: 0px;
+            padding: 26px 27px 124px 27px;
+            justify-content: flex-start;
+            font-size: 1.4rem;
+            p{
+                
+            }
+        }
+    }
+
+}
+.test{
+    height: 100rem;
+    width: 100%;
+    color: violet;
+}
