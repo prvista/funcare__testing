@@ -7,17 +7,24 @@
 
 
 .banner{
-    background-image: url(/funcare-main/dist/components/img/KID.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: rgb(86, 60, 171);
-    min-height: 43vh;
-    z-index: -999;
     position: relative;
-    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    // margin-top: -179px;
+    margin-bottom: 0px;
+    padding: 190px 0px 194px 0px;
+    z-index: 0;
+
 
     &__wrapper{
+      // transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+      // transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+      // height: 100%;
+      // width: 100%;
+      // top: 0;
+      // left: 0;
+
+
+      // margin-top: -179px;
 
     }
     &__title{
@@ -57,10 +64,11 @@
             font-family: 'Fredoka', sans-serif;
             // margin: 10px;
             color: #3c297b;
-
+            z-index: 9999;
             &:hover{
-                background: #00d084;
+                background-color: #03cb8f;
             }
+
             i{
                 color: #398ffc;
                 font-weight: 900;
@@ -75,13 +83,28 @@
         font-size: 25px;
         margin-top: 1.4rem;
     }
+
+    .background__banner{
+    background-image: url(/funcare-main/dist/components/img/KID.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    }
 }
 
-  @media screen and (min-width:770px){
+  @media screen and (min-width:767px){
     .banner{
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      margin-top: -179px;
+      margin-bottom: 0px;
+      padding: 155px 0px 194px 0px;
+      z-index: -1;
       &__wrapper{
         p{
           font-size: 36px;
@@ -90,7 +113,19 @@
       min-height: 55vh;
 
       &__text{
-        padding-right: 22rem;
+        // padding-right: 22rem;
+        // position: relative;
+        // width: 100%;
+        // flex-wrap: wrap;
+        // align-content: flex-start;
+        // background-color: #03cb8f;
+        // margin-top: 40px;
+        // padding-bottom: -50rem;
+        // position: relative;
+        // display: flex;
+        // flex-direction: column;
+
+        // padding-right: 42rem;
         h1{
           font-size: 40px;
         }
@@ -116,25 +151,32 @@
       z-index: 20;
       position: relative;
       width: 100%;
-    display: flex;
-    top: 0;
+      display: flex;
+      top: 0;
     }
   }
 
   @media screen and (min-width:1025px){
     .banner{
-      background-image: url(/funcare-main/dist/components/img/KID.webp);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: unset;
-      height: 100%;
+      min-height: unset;
+      margin-top: -179px;
+      margin-bottom: 0px;
+      padding: 355px 0px 394px 0px;
+      z-index: 0;
+     
     
       &__wrapper{
-        min-height: 88vh;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        max-width: 80%;
+        min-height: 80%;
       }
       &__text{
-        width: 65rem;
-        padding-right: unset;
+        // width: 65rem;
+        // padding-right: unset;
+        margin-top: 102px;
         h1{
           font-size: 64px;
           width: 50rem;
@@ -150,6 +192,10 @@
         a{
           font-size: 26px;
         }
+      }
+
+      .background__banner{
+        background-position: unset;
       }
     }
   }
@@ -236,7 +282,6 @@
         transition: transform 0.4s;
         transform-style: preserve-3d;
       }
-  
       &:hover .flip__box__inner {
         transform: rotateY(180deg);
       }
@@ -736,10 +781,9 @@
   // ---------LORRAINE PART-----------
 
   .home{
-    align-items: center;
+    // align-self: center;
     display: flex;
     justify-content: center;
-    // padding: 30px 15px 50px 15px;
     &__wrapper{
         padding: 30px 15px 50px 15px;
     }
@@ -950,4 +994,73 @@
     
     }
 
+}
+
+
+.banner__slider{
+  min-height: 20vh;
+  &__wrapper{
+
+    .banner__slider__item{
+    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+      img{
+        width: 204px;
+        height: 204px;
+        max-width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 150px;
+        margin: 0 auto;
+      }
+
+      .banner__slider__item__text{
+        text-align: center;
+        width: 100%;
+        font-family: 'Fredoka', sans-serif;
+        font-weight:600;
+        h4{
+          font-size: 18px;
+          line-height: 1.3em;
+          padding: 20px 15px 10px 15px;
+          color: #0e9aff;
+        }
+
+        p{
+          color: #03cb8f;
+        }
+      }
+    }
+  }
+
+  .banner__slider__wave{
+    transform: rotate(180deg);
+    // transform: rotateX(180deg);
+    // position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    direction: ltr;
+    overflow: hidden;
+      
+    &__wrapper{
+      fill: #ff0909;
+      transform-origin: center;
+      transform: scaleY(1.1);
+      svg{
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 60px;
+        transform: translateX(-50%) rotateY(180deg);
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+      }
+    }
+}
 }

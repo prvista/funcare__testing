@@ -7,8 +7,10 @@
     // padding: 3rem 1rem 2rem 1.5rem;
     background-color: $clr-purple;
     &__wrapper{
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
+        display: grid;
+        justify-content: center;
     }
     &__main{
         padding: 50px 15px 0px 15px;

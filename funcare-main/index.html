@@ -15,8 +15,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Gochi+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Gochi+Hand&display=swap" rel="stylesheet">
     
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     
     <script
       src="https://kit.fontawesome.com/29865ec48b.js"
@@ -52,7 +55,7 @@
               <div class="header__nav__container">
                   <div class="header__nav__bg">
                   </div>
-                  <div class="header__nav">                   
+                  <div class="header__nav">
                       <ul>
                           <div class="burger__btn__close"> 
                               <i class="fas fa-times"></i> 
@@ -67,33 +70,29 @@
                       </ul>
                   </div>
               </div>
-  
-              
           </div>
       </div>
-      
   </header>
   
-  
   <section class="header__desk">
-      <div class="header__desk__container">
-          <div class="header__desk__nav">
-              <ul>
-                  <li><a href="">Home</a></li>
-                  <li><a href="">About</a></li>
-                  <li><a href="">Programs</a></li>
-                  <li><a href="">Curriculum</a></li>
-                  <li><a href="">Parents</a></li>
-                  <li><a href="">FAQs</a></li>
-                  <li><a href="">Contacts</a></li>
-              </ul>
-          </div>
-      </div>
-  </section>
-
+    <div class="header__desk__container">
+        <div class="header__desk__nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Programs</a></li>
+                <li><a href="">Curriculum</a></li>
+                <li><a href="">Parents</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
 
 
     <section class="banner">
+      <div class="background__banner">
       <div class="container">
         <div class="banner__wrapper">
           <div class="banner__text">
@@ -114,6 +113,7 @@
           </div>
 
           <p>+ Wake a genius in a child</p>
+        </div>
         </div>
       </div>
       <div class="banner__wave">
@@ -363,6 +363,40 @@
         </div>
       </div>
     </section>
+
+    <section class="banner__slider">
+      <div class="container">
+        <div class="banner__slider__wrapper">
+          <div class="slider-nav">
+
+            <div class="banner__slider__item">
+              <img src="./dist/components/img/Gloria_Cooper.jpg" alt="">
+              <div class="banner__slider__item__text">
+                <h4>“Duis et neque a urna feugiat facilisis. Aliquam blandit aliquam mi, non auctor turpis interdum eget. Aenean augue nisi, condimentum non tempus at, commodo...”</h4>
+                <p>Gloria Cooper</p>
+              </div>
+            </div>
+  
+            <div class="banner__slider__item">
+              <img src="./dist/components/img/Gloria_Cooper.jpg" alt="">
+              <div class="banner__slider__item__text">
+                <h4>“We understand how important it is for children to grow up healthy, smart and happy. We develop programs that will be interesting and useful for the future generation of people!”</h4>
+                <p>Gloria Cooper</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner__slider__wave">
+        <div class="banner__slider__wave__wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <path class="elementor-shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+            c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+            c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
   
 
 
@@ -441,7 +475,8 @@
       </div>
   </footer>
 
-
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./dist/js/script.js"></script>
   </body>
 </html>

@@ -13,6 +13,20 @@
         display: grid;
         // margin-bottom: 1rem;
         text-align: center ;
+
+        // margin-top: 0px;
+        // margin-bottom: 40px;
+        // padding: 10px 0px 20px 0px;
+
+        
+
+
+        // display: flex;
+        // flex-wrap: wrap;
+        // margin-right: auto;
+        // margin-left: auto;
+        // position: relative;
+
         &__icon{
             display: flex;
             justify-content: space-between;
@@ -80,7 +94,7 @@
     }
 
     &__nav{
-        order: 992;
+        // order: 992;
         padding: 20px 12px 40px 12px;
         position: absolute;
         display: block;
@@ -89,7 +103,8 @@
         top: 0;
         right: -100rem;
         background-color: #fff;
-        transition: 0.5s ease;     
+        transition: 0.5s ease;    
+        z-index: 9999; 
 
         &.open{
             right: 0;
@@ -123,7 +138,8 @@
         }
 
         &__bg{
-            order: 999;
+            // order: 999;
+            z-index: 9999;
             position: fixed;
             display: block;
             width: 100%;
@@ -159,6 +175,10 @@
             grid-template-columns: 1fr 1fr 1fr;
             align-items: center;
             justify-content: space-around;
+
+            // margin-top: 0px;
+            // margin-bottom: 40px;
+            // padding: 10px 0px 20px 0px;
 
             &__icon{
                 padding: 29px 0px 0px 18.5px;
@@ -271,10 +291,19 @@
         &__desk{
             display: flex;
             justify-content: center;
+            z-index: 999;
+            // position: relative;
+            
+
+            margin-top: 0px;
+            margin-bottom: 120px;
+            padding: 0px 0px 20px 0px;
+            z-index: 20;
+
+            
 
             &__container{
                 padding: 8px 0px 0px 0px;
-                margin-bottom: -31px;
             }
             &__nav{
                 display: flex;
@@ -286,6 +315,8 @@
                         display: grid;
                         transition: 0.3s ease;
                         margin: 0px 5px 10px 5px;
+
+                        
                         &:hover a{
                             transition: 0.3s ease;
                             margin: -10px 0px 10px 0px;
@@ -331,8 +362,6 @@
                 }
             }
         }
-
-
     }
 
 
@@ -405,10 +434,15 @@
             display: flex;
             justify-content: center;
             &__container{
-                padding: 8px 0px 0px 0px;
-                margin-bottom: -40px;
+                // padding: 8px 0px 0px 0px;
+                // margin-bottom: 40px;
+                z-index: 20;         
             }
             &__nav{
+                // margin-top: 0px;
+                // margin-bottom: 120px;
+                // padding: 0px 0px 20px 0px;
+                // z-index: 20;
                 ul{
                     display: flex;
                     flex-flow: row wrap;
@@ -434,8 +468,6 @@
         background-color: #483290;
         height: 100vh;
     }
-
-
 }
 
 

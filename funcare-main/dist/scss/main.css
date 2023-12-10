@@ -169,8 +169,8 @@ body {
   background-color: #563cab;
 }
 .footer__wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  justify-content: center;
 }
 .footer__main {
   padding: 50px 15px 0px 15px;
@@ -538,7 +538,6 @@ body {
   display: grid;
 }
 .header__nav {
-  order: 992;
   padding: 20px 12px 40px 12px;
   position: absolute;
   display: block;
@@ -548,6 +547,7 @@ body {
   right: -100rem;
   background-color: #fff;
   transition: 0.5s ease;
+  z-index: 9999;
 }
 .header__nav.open {
   right: 0;
@@ -577,7 +577,7 @@ body {
   justify-content: flex-end;
 }
 .header__nav__bg {
-  order: 999;
+  z-index: 9999;
   position: fixed;
   display: block;
   width: 100%;
@@ -710,10 +710,14 @@ body {
   .header__desk {
     display: flex;
     justify-content: center;
+    z-index: 999;
+    margin-top: 0px;
+    margin-bottom: 120px;
+    padding: 0px 0px 20px 0px;
+    z-index: 20;
   }
   .header__desk__container {
     padding: 8px 0px 0px 0px;
-    margin-bottom: -31px;
   }
   .header__desk__nav {
     display: flex;
@@ -827,8 +831,7 @@ body {
     justify-content: center;
   }
   .header__desk__container {
-    padding: 8px 0px 0px 0px;
-    margin-bottom: -40px;
+    z-index: 20;
   }
   .header__desk__nav ul {
     display: flex;
@@ -851,15 +854,11 @@ body {
   src: url(../fonts/FredokaOne-Regular.ttf);
 }
 .banner {
-  background-image: url(/funcare-main/dist/components/img/KID.webp);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: rgb(86, 60, 171);
-  min-height: 43vh;
-  z-index: -999;
   position: relative;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  margin-bottom: 0px;
+  padding: 190px 0px 194px 0px;
+  z-index: 0;
 }
 .banner__title {
   width: 30rem;
@@ -895,9 +894,10 @@ body {
   border-radius: 11px;
   font-family: "Fredoka", sans-serif;
   color: #3c297b;
+  z-index: 9999;
 }
 .banner__button a:hover {
-  background: #00d084;
+  background-color: #03cb8f;
 }
 .banner__button a i {
   color: #398ffc;
@@ -910,19 +910,30 @@ body {
   font-size: 25px;
   margin-top: 1.4rem;
 }
+.banner .background__banner {
+  background-image: url(/funcare-main/dist/components/img/KID.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 767px) {
   .banner {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-top: -179px;
+    margin-bottom: 0px;
+    padding: 155px 0px 194px 0px;
+    z-index: -1;
     min-height: 55vh;
   }
   .banner__wrapper p {
     font-size: 36px;
-  }
-  .banner__text {
-    padding-right: 22rem;
   }
   .banner__text h1 {
     font-size: 40px;
@@ -947,18 +958,22 @@ body {
 
 @media screen and (min-width: 1025px) {
   .banner {
-    background-image: url(/funcare-main/dist/components/img/KID.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: unset;
-    height: 100%;
+    min-height: unset;
+    margin-top: -179px;
+    margin-bottom: 0px;
+    padding: 355px 0px 394px 0px;
+    z-index: 0;
   }
   .banner__wrapper {
-    min-height: 88vh;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    max-width: 80%;
+    min-height: 80%;
   }
   .banner__text {
-    width: 65rem;
-    padding-right: unset;
+    margin-top: 102px;
   }
   .banner__text h1 {
     font-size: 64px;
@@ -970,6 +985,9 @@ body {
   }
   .banner__button a {
     font-size: 26px;
+  }
+  .banner .background__banner {
+    background-position: unset;
   }
 }
 .banner__wave {
@@ -1383,7 +1401,6 @@ body {
   }
 }
 .home {
-  align-items: center;
   display: flex;
   justify-content: center;
 }
@@ -1552,4 +1569,61 @@ body {
     line-height: 35px;
     font-size: 22px;
   }
+}
+
+.banner__slider {
+  min-height: 20vh;
+}
+.banner__slider__wrapper .banner__slider__item {
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.banner__slider__wrapper .banner__slider__item img {
+  width: 204px;
+  height: 204px;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 150px;
+  margin: 0 auto;
+}
+.banner__slider__wrapper .banner__slider__item .banner__slider__item__text {
+  text-align: center;
+  width: 100%;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+}
+.banner__slider__wrapper .banner__slider__item .banner__slider__item__text h4 {
+  font-size: 18px;
+  line-height: 1.3em;
+  padding: 20px 15px 10px 15px;
+  color: #0e9aff;
+}
+.banner__slider__wrapper .banner__slider__item .banner__slider__item__text p {
+  color: #03cb8f;
+}
+.banner__slider .banner__slider__wave {
+  transform: rotate(180deg);
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  direction: ltr;
+  overflow: hidden;
+}
+.banner__slider .banner__slider__wave__wrapper {
+  fill: #ff0909;
+  transform-origin: center;
+  transform: scaleY(1.1);
+}
+.banner__slider .banner__slider__wave__wrapper svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 60px;
+  transform: translateX(-50%) rotateY(180deg);
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
 }/*# sourceMappingURL=main.css.map */
