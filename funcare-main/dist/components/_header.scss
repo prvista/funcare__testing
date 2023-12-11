@@ -316,6 +316,7 @@
                         transition: 0.3s ease;
                         margin: 0px 5px 10px 5px;
 
+
                         
                         &:hover a{
                             transition: 0.3s ease;
@@ -324,6 +325,7 @@
                         }
                         &:first-child a{
                             background-color: #0e9aff;
+                            margin: -10px 0px 10px 0px;
                         }
                         &:nth-child(2) a{
                             background-color: #03cb8f;
