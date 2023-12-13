@@ -782,8 +782,10 @@
 
   .home{
     // align-self: center;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    max-width: 120rem;
+    margin: 0 auto;
     &__wrapper{
         padding: 30px 15px 50px 15px;
     }
