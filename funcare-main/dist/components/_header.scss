@@ -10,26 +10,16 @@
         padding: 10px 0px 20px 0px;
     }
     &__top{
+        max-width: 135rem;
+        margin: 0 auto;
         display: grid;
         // margin-bottom: 1rem;
         text-align: center ;
 
-        // margin-top: 0px;
-        // margin-bottom: 40px;
-        // padding: 10px 0px 20px 0px;
-
-        
-
-
-        // display: flex;
-        // flex-wrap: wrap;
-        // margin-right: auto;
-        // margin-left: auto;
-        // position: relative;
-
         &__icon{
             display: flex;
             justify-content: space-between;
+            margin: 12px 3px 0px 12px;
             order: 3;
             margin-left: 4.5px;
             margin-right: 1rem;
@@ -98,7 +88,7 @@
         padding: 20px 12px 40px 12px;
         position: absolute;
         display: block;
-        width: 70%;
+        width: 80%;
         height: 100vh;
         top: 0;
         right: -100rem;
@@ -124,6 +114,7 @@
                     font-size: 22px;
                     font-family: Fredoka One;
                     font-weight: 600;
+                    color: #483290;
                 }
             }
             i{
@@ -474,9 +465,3 @@
         height: 100vh;
     }
 }
-
-
-         
-
-       
-
