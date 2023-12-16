@@ -50,32 +50,31 @@
     }
 
     &__button{
-        // align-items: center;
         display: flex;
         align-items: center;
-        justify-content: flex-start; /* Align content to the start */
+        justify-content: flex-start;
         a{
             background-color: #fee500;
             font-weight: 900;
             font-size: 15.5px;
             letter-spacing: 1px;
-            display: inline-flex; /* Changed to inline-flex for better alignment */
+            display: inline-flex; 
             padding: 15px 14px;
             border-radius: 11px;
             font-family: 'Fredoka', sans-serif;
             align-items: center;
             color: #3c297b;
             z-index: 9999;
-            text-decoration: none; /* Removed underline from the link */
-            transition: background-color 0.3s ease; /* Transition effect for hover */
+            text-decoration: none; 
+            transition: background-color 0.3s ease;
             &:hover{
                 background-color: #03cb8f;
             }
 
             svg{
-              width: 15px; /* Adjust width as desired */
-              height: 18px; /* Adjust height as desired */
-              margin-left: 10px; /* Provide space between text and SVG */
+              width: 15px; 
+              height: 18px; 
+              margin-left: 10px; 
             }
       }
     }
