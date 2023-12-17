@@ -66,7 +66,7 @@
             color: #3c297b;
             z-index: 9999;
             text-decoration: none; 
-            transition: background-color 0.3s ease;
+            // transition: background-color 0.3s ease;
             &:hover{
                 background-color: #03cb8f;
             }
@@ -218,6 +218,18 @@
       &__text{
         padding: 2rem 37rem 4rem 0;
       }
+
+
+      &__button{
+
+        a{
+            svg{
+              width: 25px; 
+              height: 18px; 
+              margin-left: 10px; 
+            }
+      }
+    }
     }
   }
 
@@ -535,6 +547,8 @@
         flex-wrap: wrap;
         margin-top: -22rem;
 
+
+
         .about__kids__bottom {
           justify-content: center;
           flex-direction: column;
@@ -543,6 +557,7 @@
           img {
             vertical-align: middle;
             display: inline-block;
+            margin: 0 auto;
             &:first-child {
               align-self: center;
             }
@@ -554,7 +569,7 @@
               padding: 20px 0;
             }
   
-            &:last-child {
+            &:nth-child(3) {
               align-self: center;
             }
           }
@@ -589,6 +604,12 @@
               top: -298px;
               left: -250px;
             }
+          }
+        }
+
+        .about__kids__bottom__separate{
+          img{
+            display: none;
           }
         }
       }
@@ -685,7 +706,7 @@
                 align-self: flex-start;
               }
 
-              &:last-child{
+              &:nth-child(3){
                 padding-left: 10px;
               }
             }
@@ -760,6 +781,7 @@
         .about__image__bottom{  
           padding: 0 15rem;
           .about__kids__bottom{
+            position: relative;
             img{
               // width: 75%;
               max-width: 100%;
@@ -777,22 +799,36 @@
                 z-index: -4;
               }
 
-              &:last-child{
-                padding: 0;
-                right: 40px;
-                z-index: 999;
+              &:nth-child(3){
+              padding: 0;
+              right: 40px;
+              z-index: 999;
+              position: sticky;
+              margin-left: 5rem;
+
               }
             }
+
+            // .about__kids__bottom__separate{
+            //   position: absolute;
+            //   width: 100%;
+            //   z-index: 999;
+            //   right: 10%; /* Adjust this based on your layout */
+            //   top: -50px; /* Adjust this based on your layout */
+            //   display: block; /* Show the image */
+            //   img{
+            //     padding: 0;
+            //     width: 50%;
+            //     transform: rotate(180deg);
+            //   }
+            // }
           }
         }
       }
-
-
-
-
-
     }
   }
+
+
 
 
 
@@ -801,10 +837,8 @@
   // ---------LORRAINE PART-----------
 
   .home{
-    // align-self: center;
-    // display: flex;
-    // justify-content: center;
-    max-width: 120rem;
+    padding: 130px 0px 130px 0px;
+    max-width: 135rem;
     margin: 0 auto;
     &__wrapper{
         padding: 30px 15px 50px 15px;
@@ -826,13 +860,15 @@
                 font-size: 28px;
             }
         }
+       
     }
     .feature{
         &__wrapper{
             margin-top: 10px;
             max-width: 700px;
         }
-        
+
+     
         &__item{
           width: 100%;
             justify-content: center;
@@ -991,6 +1027,8 @@
             }
             &__content{
                 padding: 0px 27px 0px 27px;            
+                max-width: 45rem;
+
               }
             &__img{
               margin-bottom: 29px;
@@ -1018,6 +1056,7 @@
 
 }
 
+// BANNER SLIDEEEEER
 
 .banner__slider{
   min-height: 20vh;
