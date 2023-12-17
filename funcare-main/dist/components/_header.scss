@@ -4,13 +4,16 @@
   }
 
 .header{
-    
+    width: 100%;
+    position: relative;
+    z-index: 9999;
     &__wrapper{
         margin-top: 0px;
         // margin-bottom: 40px;
         padding: 10px 0px 20px 0px;
     }
     &__top{
+        width: 100%;
         max-width: 135rem;
         margin: 0 auto;
         display: grid;
@@ -29,6 +32,7 @@
                 gap: 0.7rem;
                 li{
                     margin: 0 8px;
+                    
                     &:hover i{
                         color: #483290;
                     }
@@ -76,6 +80,11 @@
                 font-family: 'Gochi Hand', cursive;
                 color: #483290;
                 text-align: center;
+                transition: 0.5s ease;
+                &:hover{
+                    color: #398ffc;
+                    transition: 0.5s ease;
+                }
             }
         }
     }
@@ -108,6 +117,11 @@
             
             li{
                 margin-top: 2rem;
+                &.active{
+                    a{
+                        color: #FF7223;
+                    }
+                }
                 &:hover a{
                     color: #FF7223;
                 }
@@ -466,3 +480,9 @@
         height: 100vh;
     }
 }
+
+
+         
+
+       
+
