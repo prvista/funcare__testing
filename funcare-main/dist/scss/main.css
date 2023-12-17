@@ -923,7 +923,6 @@ body {
   color: #3c297b;
   z-index: 9999;
   text-decoration: none;
-  transition: background-color 0.3s ease;
 }
 .banner__button a:hover {
   background-color: #03cb8f;
@@ -1034,6 +1033,11 @@ body {
 @media screen and (min-width: 1225px) {
   .banner__text {
     padding: 2rem 37rem 4rem 0;
+  }
+  .banner__button a svg {
+    width: 25px;
+    height: 18px;
+    margin-left: 10px;
   }
 }
 .banner__wave {
@@ -1286,6 +1290,7 @@ body {
 .about__image .about__image__bottom .about__kids__bottom img {
   vertical-align: middle;
   display: inline-block;
+  margin: 0 auto;
 }
 .about__image .about__image__bottom .about__kids__bottom img:first-child {
   align-self: center;
@@ -1296,7 +1301,7 @@ body {
   width: 30rem;
   padding: 20px 0;
 }
-.about__image .about__image__bottom .about__kids__bottom img:last-child {
+.about__image .about__image__bottom .about__kids__bottom img:nth-child(3) {
   align-self: center;
 }
 .about__image .about__image__bottom .about__shapes__bottom {
@@ -1325,6 +1330,9 @@ body {
 .about__image .about__image__bottom .about__shapes__bottom img:last-child {
   top: -298px;
   left: -250px;
+}
+.about__image .about__image__bottom .about__kids__bottom__separate img {
+  display: none;
 }
 
 @media screen and (min-width: 770px) {
@@ -1388,7 +1396,7 @@ body {
     padding: 0 10px;
     align-self: flex-start;
   }
-  .about__image .about__image__bottom .about__kids__bottom img:last-child {
+  .about__image .about__image__bottom .about__kids__bottom img:nth-child(3) {
     padding-left: 10px;
   }
   .about__image .about__image__bottom .about__shapes__bottom img:first-child {
@@ -1425,6 +1433,9 @@ body {
   .about__image .about__image__bottom {
     padding: 0 15rem;
   }
+  .about__image .about__image__bottom .about__kids__bottom {
+    position: relative;
+  }
   .about__image .about__image__bottom .about__kids__bottom img {
     max-width: 100%;
     position: relative;
@@ -1440,14 +1451,17 @@ body {
     width: 70rem;
     z-index: -4;
   }
-  .about__image .about__image__bottom .about__kids__bottom img:last-child {
+  .about__image .about__image__bottom .about__kids__bottom img:nth-child(3) {
     padding: 0;
     right: 40px;
     z-index: 999;
+    position: sticky;
+    margin-left: 5rem;
   }
 }
 .home {
-  max-width: 120rem;
+  padding: 130px 0px 130px 0px;
+  max-width: 135rem;
   margin: 0 auto;
 }
 .home__wrapper {
@@ -1599,6 +1613,7 @@ body {
   }
   .home .feature__item__content {
     padding: 0px 27px 0px 27px;
+    max-width: 45rem;
   }
   .home .feature__item__img {
     margin-bottom: 29px;
