@@ -39,6 +39,11 @@
             }
             ul{ 
                 li{
+                    &.active{
+                        a{
+                            color: $clr-blue;
+                        }
+                    }
                     &:hover a{
                         color: $clr-blue;
                     }

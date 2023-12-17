@@ -856,7 +856,6 @@
   // ---------LORRAINE PART-----------
 
   .home{
-    padding: 130px 0px 130px 0px;
     max-width: 135rem;
     margin: 0 auto;
     &__wrapper{
@@ -882,6 +881,9 @@
        
     }
     .feature{
+      &__bg{
+        display: none;
+      }
         &__wrapper{
             margin-top: 10px;
             max-width: 700px;
@@ -995,6 +997,7 @@
             }
             &__content{
                 padding: 0px 10px 0px 10px;
+
             }
             &__text{
                 h3{
@@ -1012,7 +1015,7 @@
 
     @media screen and (min-width:1025px){
         &__wrapper{
-            max-width: 2000px;
+            max-width: unset;
             padding:0;
 
     }
@@ -1028,9 +1031,62 @@
         }
     }
     .feature{
+      &__bg{
+        margin-bottom: 40px;
+        position: absolute;
+        z-index: -9;
+        display: block;
+        width: 100%;
+        height: 145%;
+        // top: 0;
+        left: 0;
+        overflow: hidden;
+        pointer-events: none;
+        max-height: 95rem;
+        // -webkit-perspective: 1200px;
+        // perspective: 1200px;
+        .bgshape__1{
+          background-position: 68% 85%;
+          background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-8.png);
+          transform: translateY(73.2px);
+          background-size: auto;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
+        .bgshape__2{
+          background-position: 100% 2%;
+          background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-6.png);
+          transform: translateY(73.2px);
+          background-size: auto;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
+        .bgshape__3{
+          background-position: 6% 19%;
+          background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-4.png);
+          transform: translateY(73.2px);
+          background-size: auto;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
+        .bgshape__4{
+          background-position: 37.5% 62%;
+          background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-7.png);
+          transform: translateY(42.9px);
+          background-size: auto;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
+      }
       &__wrapper{
         margin-top: 0px;
         align-items:baseline;
+        width: 135rem;
+
       }
 
         &__item{
@@ -1046,7 +1102,7 @@
             }
             &__content{
                 padding: 0px 27px 0px 27px;            
-                max-width: 45rem;
+                max-width: unset;
 
               }
             &__img{
@@ -1058,6 +1114,24 @@
                   // position: relative;
                   // display: block;
                 }
+                &:nth-child(2){
+                  justify-content: unset;
+              }
+              &:nth-child(3){
+                  justify-content: unset;
+              }
+              &:nth-child(4){
+                  margin-top: 30px;
+                  justify-content: unset;
+              }
+              &:nth-child(5){
+                  margin-top: 30px;
+                  justify-content: unset;
+              }
+              &:nth-child(6){
+                  margin-top: 30px;
+                  justify-content: unset;
+              }
             }
             &__text{
                 h3{
