@@ -177,6 +177,393 @@ body {
   background: #c61fa1;
 }
 
+.faq__item__1 .faq__title__1 {
+  text-align: center;
+}
+.faq__item__1 .faq__title__1 h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ff7223;
+  font-family: Fredoka One;
+}
+.faq__item__1 .faq__title__1 h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #483290;
+  font-family: Fredoka One;
+  margin-bottom: 2rem;
+}
+.faq__item__1 .faq__links {
+  align-self: center;
+}
+.faq__item__1 .faq__links h4 {
+  z-index: 1000000000000000000000000000000000000000000000000000000;
+  background: #eef8ff;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  color: #0e9aff;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+  font-family: Fredoka One;
+  box-shadow: rgba(50, 61, 91, 0.1) 4px 10px 4px 0px;
+}
+.faq__item__1 .faq__links h4:hover {
+  background: #0e9aff;
+  color: #eef8ff;
+}
+.faq__item__1 .faq__links h4.down {
+  background: #0e9aff;
+}
+.faq__item__1 .faq__links p {
+  width: 42rem;
+  text-align: center;
+  max-height: 0rem;
+  overflow: hidden;
+  transition: 0.5s ease;
+  margin: 0 auto;
+  text-align: justify;
+  color: #8a76c0;
+  margin-bottom: 2rem;
+}
+.faq__item__1 .faq__links p.down {
+  max-height: 50rem;
+  width: 42rem;
+  transition: 0.5s ease;
+  margin-top: 1.5rem;
+}
+
+.faq__item__2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.faq__item__2 .faq__title__2 {
+  text-align: center;
+  padding-top: 5rem;
+}
+.faq__item__2 .faq__title__2 h4 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #ff7223;
+  font-family: Fredoka One;
+}
+.faq__item__2 .faq__title__2 h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #483290;
+  font-family: Fredoka One;
+}
+.faq__item__2 .faq__text__content p {
+  text-align: center;
+  margin: 0 auto;
+  color: #919191;
+  font-size: 1.7rem;
+  padding-bottom: 8rem;
+}
+
+.flip__box {
+  position: relative;
+  z-index: 999;
+  margin-top: -7.5rem;
+}
+.flip__box__wrapper .flip__box__item:first-child {
+  background: rgb(14, 154, 255);
+}
+.flip__box__wrapper .flip__box__item:nth-child(2) {
+  background: rgb(156, 198, 36);
+}
+.flip__box__wrapper .flip__box__item:nth-child(3) {
+  background: rgb(255, 114, 35);
+}
+.flip__box__wrapper .flip__box__item:last-child {
+  background: rgb(198, 31, 161);
+}
+.flip__box__text {
+  text-align: center;
+}
+.flip__box__item {
+  border-radius: 12px;
+  position: relative;
+  perspective: 1000px;
+  color: #ffffff;
+  width: 100%;
+  height: 23rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.flip__box__item .flip__box__inner {
+  position: relative;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+.flip__box__item:hover .flip__box__inner {
+  transform: rotateY(180deg);
+}
+.flip__box__item .front, .flip__box__item .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip__box__item .back {
+  transform: rotateY(180deg);
+}
+.flip__box__item .flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+.flip__box__item h3 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  padding: 2rem;
+  line-height: 36px;
+  font-family: "Fredoka", sans-serif;
+}
+.flip__box img {
+  width: 8rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.flip__box .flip__box__btn a {
+  align-items: center;
+  align-self: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: rgba(50, 61, 91, 0.1) 4px 10px 4px 0px;
+  color: rgb(72, 50, 144);
+  cursor: pointer;
+  display: flex;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: normal;
+  padding: 10px 12px;
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  transition: 0.3s ease;
+}
+.flip__box .flip__box__btn a:hover {
+  background: rgb(72, 50, 144);
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.faq__signup {
+  padding-bottom: 4rem;
+}
+.faq__signup .faq__consult {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.faq__signup .faq__consult a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fee500;
+  color: #533f6c;
+  padding: 1.5rem;
+  border-radius: 11px;
+  font-weight: 600;
+  font-family: Fredoka One;
+  width: 29rem;
+}
+.faq__signup .faq__consult a:hover {
+  background: #03cb8f;
+}
+.faq__signup .faq__consult a span {
+  margin-right: 0.5rem;
+}
+.faq__signup .faq__consult a svg {
+  width: 2.5rem;
+}
+
+@media screen and (min-width: 770px) {
+  .faq__item__1 .faq__title__1 h4 {
+    font-size: 22px;
+  }
+  .faq__item__1 .faq__title__1 h2 {
+    font-size: 35px;
+  }
+  .faq__item__1 .faq__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq__item__1 .faq__links h4 {
+    width: 57rem;
+    font-size: 18px;
+    padding: 1.8rem;
+  }
+  .faq__item__1 .faq__links p {
+    font-size: 16px;
+    width: 53rem;
+  }
+  .faq__item__1 .faq__links p.down {
+    width: 53rem;
+  }
+  .faq__text__content {
+    margin-bottom: 4rem;
+    max-width: 70rem;
+    align-self: center;
+  }
+  .faq__signup {
+    padding-bottom: 10rem;
+  }
+  .faq__signup .faq__consult a {
+    padding: 2.2rem 4rem;
+    font-size: 26px;
+    width: unset;
+  }
+  .flip__box {
+    padding-bottom: 6rem;
+    margin-top: -6.6em;
+  }
+  .flip__box__wrapper {
+    display: flex;
+  }
+  .flip__box__item {
+    margin: 0 1rem;
+    padding: 1rem;
+    height: 25.5rem;
+  }
+  .flip__box__item .flip__box__btn a {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .flip__box__text h3 {
+    padding: 1rem;
+  }
+  .flip__box__text h4 {
+    padding: 0 0.5rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .background__svg {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    perspective: 1200px;
+  }
+  .background__svg .svg__1 {
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100%;
+    width: 100%;
+    background-position: 95% 88%;
+    background-image: url("https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-8.png");
+    transform: translateY(15.8px);
+  }
+  .background__svg .svg__2 {
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: 100% 18%;
+    background-image: url("https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-6.png");
+    transform: translateY(15.8px);
+  }
+  .background__svg .svg__3 {
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100%;
+    width: 100%;
+    background-position: 5% 42%;
+    background-image: url("https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-4.png");
+    transform: translateY(15.8px);
+  }
+  .background__svg .svg__4 {
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100%;
+    width: 100%;
+    background-position: 13% 85%;
+    background-image: url("https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-7.png");
+    transform: translateY(15.8px);
+  }
+  .faq__item__1 .faq__title__1 {
+    text-align: center;
+  }
+  .faq__item__1 .faq__title__1 h4 {
+    font-size: 30px;
+  }
+  .faq__item__1 .faq__title__1 h2 {
+    font-size: 64px;
+  }
+  .faq__item__1 .faq__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  .faq__item__1 .faq__links h4 {
+    width: 102rem;
+    font-size: 30px;
+    padding: 2rem 4rem;
+  }
+  .faq__item__1 .faq__links p {
+    font-size: 22px;
+    width: 91rem;
+  }
+  .faq__item__1 .faq__links p.down {
+    width: 91rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+  .faq__links p {
+    text-align: center;
+    max-height: 0rem;
+    overflow: hidden;
+    transition: 0.5s ease;
+    margin: 0 auto;
+    text-align: justify;
+    color: #8a76c0;
+    margin-bottom: 2rem;
+  }
+  .faq__links p.down {
+    max-height: 50rem;
+    transition: 0.5s ease;
+  }
+  .faq__signup {
+    padding-bottom: 10rem;
+  }
+  .faq__signup .faq__consult a {
+    padding: 2.2rem 4rem;
+    font-size: 26px;
+    width: unset;
+  }
+  .flip__box__item {
+    margin: 0 1rem;
+    height: 36rem;
+  }
+  .flip__box__item img {
+    width: 14.4rem;
+  }
+  .flip__box__item .flip__box__btn a {
+    margin-top: 2.5rem;
+  }
+  .flip__box__text {
+    padding: 3.3rem;
+  }
+  .flip__box__text h3 {
+    font-size: 30px;
+  }
+  .flip__box__text h4 {
+    padding: 0 0.5rem;
+  }
+}
 @font-face {
   font-family: Fredoka One;
   src: url(../fonts/FredokaOne-Regular.ttf);

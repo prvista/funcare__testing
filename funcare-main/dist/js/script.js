@@ -1,3 +1,13 @@
+const links = document.querySelectorAll(".faq__links h4");
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    link.nextElementSibling.classList.toggle("down");
+    link.querySelector("i").classList.toggle("down");
+  });
+});
+
+
+
 const burgerBtn = document.querySelector(".burger__btn")
 const headerNav = document.querySelector(".header__nav")
 const headerNavBg = document.querySelector(".header__nav__bg")
