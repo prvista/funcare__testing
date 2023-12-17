@@ -923,6 +923,7 @@ body {
   color: #3c297b;
   z-index: 9999;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 .banner__button a:hover {
   background-color: #03cb8f;
@@ -1034,8 +1035,16 @@ body {
   .banner__text {
     padding: 2rem 37rem 4rem 0;
   }
+  .banner__button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .banner__button a:hover {
+    background-color: #03cb8f;
+  }
   .banner__button a svg {
-    width: 25px;
+    width: 15px;
     height: 18px;
     margin-left: 10px;
   }
