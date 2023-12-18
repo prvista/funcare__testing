@@ -158,13 +158,6 @@ body {
   font-family: Fredoka One;
   src: url(../font/FredokaOne-Regular.ttf);
 }
-.container {
-  max-width: 130rem;
-  width: 100%;
-  padding: 1.5rem;
-  margin: 0 auto;
-}
-
 .bg--blue {
   background: #0e9aff;
 }
@@ -2300,111 +2293,119 @@ body {
 }
 .contact__us {
   text-align: center;
-  padding-top: 2rem;
 }
 .contact__us h4 {
-  font-size: 1.9rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 500;
   color: #FF7223;
   font-family: Fredoka One;
 }
 .contact__us h2 {
-  font-size: 2.9rem;
-  font-weight: 600;
+  font-size: 2.8rem;
+  font-weight: 500;
   color: #483290;
+  font-family: Fredoka One;
 }
 .contact__us p {
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
-  padding-top: 1.8rem;
-  color: #483290;
+  color: #7f70b1;
   margin: 0 auto;
-  padding: 5.5rem;
+  padding: 2rem 2.6rem 2.6rem 2.6rem;
+  max-width: 50rem;
+  line-height: 2.7rem;
 }
-.contact__container {
+.contact .item__container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 2rem;
   line-height: 2rem;
-  padding-top: 0rem;
-  width: 100%;
 }
-.contact__container .contact__item {
+.contact .item__container .contact__item {
+  display: block;
   text-align: center;
   border-radius: 10px;
-  padding: 4rem;
   margin-bottom: 2.5rem;
-  width: 100%;
+  padding: 3.5rem 1.5rem 1rem 1.5rem;
 }
-.contact__container .contact__item i {
+.contact .item__container .contact__item:first-child p {
+  max-width: 60rem;
+}
+.contact .item__container .contact__item i {
   font-size: 3rem;
   color: yellow;
+  padding-bottom: 1rem;
 }
-.contact__container .contact__item h5 {
+.contact .item__container .contact__item h5 {
   font-size: 2rem;
   font-weight: 600;
-  color: #ffffff;
-}
-.contact__container .contact__item p {
-  font-size: 1.7rem;
-  padding-top: 1rem;
-  font-family: "Open Sans", sans-serif;
   color: #ffffff;
   padding-bottom: 1rem;
 }
-.contact__container .contact__item h6 {
+.contact .item__container .contact__item p {
+  font-size: 1.7rem;
+  font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  font-size: 2rem;
-  font-weight: 600;
-  padding-top: 1rem;
-  font-family: "Fredoka", "sans-serif";
+  max-width: 40rem;
+  padding: 2rem;
 }
-.contact__container .contact__item h6:hover {
+.contact .item__container .contact__item h6 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: Fredoka One;
+}
+.contact .item__container .contact__item h6:hover {
   transition: 0.5s ease;
   color: black;
 }
-.contact__container .contact__item a {
-  font-size: 2rem;
+.contact .item__container .contact__item a {
+  font-size: 1.8rem;
   font-weight: 500;
   color: #ffffff;
 }
-.contact__container .contact__item a:hover {
+.contact .item__container .contact__item a:hover {
   transition: 0.5s ease;
   color: black;
 }
-.contact__container .contact__item span {
-  width: 10rem;
-  color: #ffffff;
+.contact .item__container .contact__item span {
+  background-color: #ffffff;
+  z-index: -999;
+  width: 2rem;
+  height: 2rem;
 }
 .contact .mess__us {
   text-align: center;
 }
 .contact .mess__us h4 {
-  font-size: 1.9rem;
-  font-weight: 1000;
+  font-size: 2rem;
+  font-weight: 500;
   color: #FF7223;
+  font-family: Fredoka One;
 }
 .contact .mess__us h2 {
-  font-size: 2.9rem;
-  font-weight: 600;
+  font-size: 2.8rem;
+  font-weight: 500;
   color: #483290;
+  font-family: Fredoka One;
 }
 .contact .mess__us p {
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
-  padding-top: 1.8rem;
-  color: #483290;
+  color: #7f70b1;
   margin: 0 auto;
-  padding: 4rem;
+  padding: 2rem 2.6rem 0.5rem 2.6rem;
 }
 .contact .form {
-  gap: 3rem;
-  padding-top: 2rem;
+  gap: 1rem;
+  padding-top: 1rem;
   color: #483290;
 }
 .contact .form__wrapper {
-  margin: 0 15px;
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 1.5rem;
 }
 .contact .form .form__input {
   display: flex;
@@ -2412,34 +2413,52 @@ body {
   gap: 2rem;
   padding-bottom: 2rem;
 }
-.contact .form .form__input input {
-  border-radius: 2rem;
-  font-size: 2.3rem;
-  padding: 2rem;
+.contact .form .form__input .input {
+  border-radius: 1rem;
+  font-size: 1.7rem;
+  padding: 1.5rem;
+  padding-left: 2.5rem;
   background-color: #eef8ff;
   border-color: #eef8ff;
   border-style: solid;
-  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
-.contact .form textarea {
-  border-radius: 2rem;
-  font-size: 2.2rem;
+.contact .form .form__input .input:focus {
+  background-color: transparent;
+  outline-color: #d1ecff;
+  color: #483290;
+}
+.contact .textarea {
+  border-radius: 1rem;
+  font-size: 1.8rem;
   background-color: #eef8ff;
   border-color: #eef8ff;
   border-style: solid;
   width: 100%;
   padding-top: 2rem;
   padding-left: 2rem;
+  resize: vertical;
+  min-height: 20rem;
+  max-height: 50rem;
+  height: 24rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
-.contact .form ::-moz-placeholder {
+.contact .textarea:focus {
+  background-color: #ffffff;
+  outline-color: #d1ecff;
   color: #483290;
 }
-.contact .form ::placeholder {
+.contact ::-moz-placeholder {
+  color: #483290;
+}
+.contact ::placeholder {
   color: #483290;
 }
 .contact .mess__btn {
-  padding: 2rem;
-  padding-top: 3.5rem;
+  padding-left: 1.3rem;
+  padding-top: 2.3rem;
   width: 100%;
 }
 .contact .mess__btn a {
@@ -2450,25 +2469,29 @@ body {
   padding: 2rem;
   border-radius: 1.5rem;
   box-shadow: 4px 10px 4px 0px rgba(50, 61, 91, 0.1);
+  transition: 0.5s ease;
 }
 .contact .mess__btn a:hover {
   transition: 0.5s ease;
   background-color: #ffa012;
 }
 .contact .g__maps .map__container {
-  padding-top: 9rem;
+  padding-top: 8rem;
   display: flex;
 }
 .contact .g__maps .map__container iframe {
   width: 100%;
   height: 50vh;
 }
+.contact__text {
+  margin: 0 auto;
+  width: 80%;
+}
 
 @media screen and (min-width: 760px) {
   .contact__wrapper .contact__wrapper__box {
     display: flex;
     gap: 2rem;
-    max-width: 100%;
   }
   .contact__wrapper .contact__wrapper__box .contact__item {
     padding: 2rem;
@@ -2495,17 +2518,16 @@ body {
   .contact__wrapper .contact__wrapper__box .contact__item h6 {
     color: #ffffff;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 300;
     padding-top: 0rem;
-    font-family: "Fredoka", "sans-serif";
+    font-family: Fredoka One;
   }
   .contact__wrapper .contact__wrapper__box .contact__item h6:hover {
     transition: 0.5s ease;
     color: black;
   }
   .contact__wrapper .contact__wrapper__box .contact__item a {
-    text-decoration: underline;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: #ffffff;
   }
@@ -2574,7 +2596,6 @@ body {
     color: #483290;
     margin: 0 auto;
     width: 100%;
-    padding: 2rem;
   }
   .contact__us {
     text-align: center;
@@ -2599,8 +2620,7 @@ body {
     width: 100%;
   }
   .contact .mess__btn {
-    padding: 2rem;
-    padding-top: 3rem;
+    padding: 3rem;
     text-align: left;
   }
   .contact .mess__btn a {
@@ -2630,8 +2650,8 @@ body {
   }
   .contact__wrapper .contact__us p {
     padding-top: 5rem;
-    font-size: 2.5rem;
-    max-width: 135rem;
+    font-size: 2.2rem;
+    max-width: 115rem;
     line-height: 4rem;
     color: #897cb7;
   }
@@ -2643,6 +2663,7 @@ body {
   }
   .contact__wrapper .contact__wrapper__box .contact__item {
     padding: 4rem;
+    width: 100%;
   }
   .contact__wrapper .contact__wrapper__box .contact__item i {
     font-size: 3.5rem;
@@ -2650,35 +2671,31 @@ body {
     padding-bottom: 2rem;
   }
   .contact__wrapper .contact__wrapper__box .contact__item h5 {
-    font-size: 30px;
+    font-size: 3.5rem;
     font-weight: 600;
     color: #ffffff;
     padding-bottom: 2rem;
   }
   .contact__wrapper .contact__wrapper__box .contact__item p {
-    font-size: 22px;
-    padding-top: 1rem;
+    font-size: 2.2rem;
     font-family: "Open Sans", sans-serif;
     color: #ffffff;
     padding-bottom: 1rem;
-    margin: 0 auto;
     line-height: 4rem;
-    max-width: 37rem;
+    max-width: 60rem;
   }
   .contact__wrapper .contact__wrapper__box .contact__item h6 {
     color: #ffffff;
-    font-size: 22px;
-    font-weight: 600;
-    padding-top: 0rem;
-    font-family: "Fredoka", "sans-serif";
-    line-height: 5rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    font-family: Fredoka One;
+    line-height: 3.5rem;
   }
   .contact__wrapper .contact__wrapper__box .contact__item h6:hover {
     transition: 0.5s ease;
     color: black;
   }
   .contact__wrapper .contact__wrapper__box .contact__item a {
-    text-decoration: underline;
     font-size: 2.5rem;
     font-weight: 500;
     color: #ffffff;
@@ -2696,16 +2713,17 @@ body {
     font-weight: 400;
   }
   .contact__wrapper .mess__us h2 {
-    font-size: 7rem;
+    font-size: 6.4rem;
     font-family: Fredoka One;
     font-weight: 500;
   }
   .contact__wrapper .mess__us p {
     padding-top: 5rem;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     max-width: 135rem;
     line-height: 4rem;
     color: #897cb7;
+    max-width: 120rem;
   }
   .contact__wrapper .form__container {
     display: flex;
@@ -2714,7 +2732,7 @@ body {
     align-items: center;
   }
   .contact__wrapper .form__container .form__wrapper {
-    width: 80%;
+    width: 100%;
   }
   .contact__wrapper .form__container .form__wrapper .form {
     display: flex;
@@ -2735,13 +2753,23 @@ body {
     border-style: solid;
     color: black;
   }
+  .contact__wrapper .form__container .form__wrapper .form .form__input .input:focus {
+    background-color: #ffffff;
+    border-color: #d1ecff;
+    color: #483290;
+  }
   .contact__wrapper .form__container .form__wrapper .form textarea {
     border-radius: 2rem;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     padding: 2rem;
     background-color: #eef8ff;
     border-color: #eef8ff;
     border-style: solid;
+  }
+  .contact__wrapper .form__container .form__wrapper .form textarea:focus {
+    background-color: #ffffff;
+    border-color: #d1ecff;
+    color: #483290;
   }
   .contact__wrapper .form__container .form__wrapper .form ::-moz-placeholder {
     color: #483290;
@@ -2758,12 +2786,13 @@ body {
   .contact__wrapper .form__container .mess__btn a {
     width: unset;
     background-color: #fee500;
-    font-size: 3rem;
-    font-weight: 600;
-    padding: 2.5rem 5rem;
+    font-size: 2.7rem;
+    font-weight: 500;
+    padding: 2.4rem 4.5rem;
     border-radius: 1.5rem;
     color: #483290;
     box-shadow: 4px 10px 4px 0px rgba(50, 61, 91, 0.1);
+    font-family: Fredoka One;
   }
   .contact__wrapper .form__container .mess__btn a:hover {
     transition: 0.5s ease;

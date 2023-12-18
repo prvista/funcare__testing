@@ -1,71 +1,78 @@
 .contact{
     &__us{
-     text-align: center;
-     padding-top: 2rem;
+        text-align: center;
         h4{
-            font-size: 1.9rem;
-            font-weight: 700;
+            font-size: 2rem;
+            font-weight: 500;
             color: $clr-orange;
             font-family: Fredoka One;
         }
         h2{
-            font-size: 2.9rem;
-            font-weight: 600;
+            font-size: 2.8rem;
+            font-weight: 500;
             color: $clr-violet;
+            font-family: Fredoka One;
         }
         p{
             font-family: $ff-secondary;
             font-size: 1.8rem;
-            padding-top: 1.8rem;
-            color: $clr-violet;
+            color: $clr-lightviolet;
             margin: 0  auto;
-            padding: 5.5rem;
+            padding: 2rem 2.6rem 2.6rem 2.6rem;
+            max-width: 50rem;
+            line-height: 2.7rem;
         }
-    }
-    &__container{
+    } 
+
+
+    .item__container{
      display: flex;
      flex-direction: column;
      margin: 0 auto;
      padding: 2rem;
      line-height: 2rem;
-     padding-top: 0rem;
-     width: 100%;
         .contact__item{
-         text-align: center;
-         border-radius: 10px;
-         padding: 4rem;
-         margin-bottom: 2.5rem;
-         width: 100%;
+        display: block;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 2.5rem;
+        padding: 3.5rem 1.5rem 1rem 1.5rem;
+            &:first-child{
+                p{
+                    max-width: 60rem;
+                }
+            }
             i{
                 font-size: 3rem;
                 color: yellow;
+                padding-bottom: 1rem;
             }
             h5{
                 font-size: 2rem;
                 font-weight: 600;
                 color: $clr-light;
+                padding-bottom: 1rem;
             }
             p{
                 font-size: 1.7rem;
-                padding-top: 1rem;
                 font-family: $ff-secondary;
                 color: $clr-light;
-                padding-bottom: 1rem;
- 
+                max-width: 40rem;
+                padding: 2rem;
             }
             h6{
                 color: $clr-light;
-                font-size: 2rem;
-                font-weight: 600;
-                padding-top: 1rem;
-                font-family: $ff-primary;
+                font-size: 1.5rem;
+                font-weight: 500;
+                font-family: Fredoka One;
             }
             h6:hover{
                 transition: 0.5s ease;
                 color: black;
             }
             a{
-                font-size: 2rem;
+                // text-decoration: underline;
+                font-size: 1.8rem;
                 font-weight: 500;
                 color: $clr-light;
             }
@@ -74,31 +81,33 @@
                 color: black;
             }
             span{
-                width: 10rem;
-                color: $clr-light;
+                background-color: $clr-light;
+                z-index: -999;
+                width: 2rem;
+                height: 2rem;
             }
         }
     } 
- 
         .mess__us{
             text-align: center;
             h4{
-                font-size: 1.9rem;
-                font-weight: 1000;
+                font-size: 2rem;
+                font-weight: 500;
                 color: $clr-orange;
+                font-family: Fredoka One;
             }
             h2{
-                font-size: 2.9rem;
-                font-weight: 600;
+                font-size: 2.8rem;
+                font-weight: 500;
                 color: $clr-violet;
+                font-family: Fredoka One;
             }
             p{
                 font-family: $ff-secondary;
                 font-size: 1.8rem;
-                padding-top: 1.8rem;
-                color: $clr-violet;
+                color: $clr-lightviolet;
                 margin: 0  auto;
-                padding: 4rem;
+                padding: 2rem 2.6rem 0.5rem 2.6rem;
             }
         }  
          
@@ -107,45 +116,64 @@
         //      padding: 1rem;
         //      width: 100%;
         .form{
-            gap: 3rem;
-            padding-top: 2rem;
+            gap: 1rem;
+            padding-top: 1rem;
             color: $clr-violet;
             &__wrapper{
-                margin: 0 15px;
+                max-width: 150rem;
+                margin: 0 auto;
+                padding: 1.5rem;
             }
             .form__input{
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
                 padding-bottom: 2rem;
-                input{
-                    border-radius: 2rem;
-                    font-size: 2.3rem;
-                    padding: 2rem;
-                    background-color: #eef8ff;
-                    border-color: #eef8ff;
-                    border-style: solid;
-                    color: black;
+                    .input{
+                        border-radius: 1rem;
+                        font-size: 1.7rem;
+                        padding: 1.5rem;
+                        padding-left: 2.5rem;
+                        background-color: #eef8ff;
+                        border-color: #eef8ff;
+                        border-style: solid;
+                        font-family: $ff-secondary;
+                        font-weight: 600;
+                    }
+                    .input:focus{
+                        background-color: transparent;
+                        outline-color: #d1ecff;
+                        color: $clr-violet;
+                    }
                 }
             }
-        textarea{
-            border-radius: 2rem;
-            font-size: 2.2rem;
+        .textarea{
+            border-radius: 1rem;
+            font-size: 1.8rem;
             background-color: #eef8ff;
             border-color: #eef8ff;
             border-style: solid;
             width: 100%;
             padding-top: 2rem;
             padding-left: 2rem;
+            resize: vertical;
+            min-height: 20rem;
+            max-height: 50rem;
+            height: 24rem;
+            font-family: $ff-secondary;
+            font-weight: 600;
+        }
+        .textarea:focus{
+            background-color: $clr-light;
+            outline-color: #d1ecff;
+            color: $clr-violet;
         }
         ::placeholder{
             color: $clr-violet;
         }
-            //  }
-    }
         .mess__btn{
-            padding: 2rem;
-            padding-top: 3.5rem;
+            padding-left: 1.3rem;
+            padding-top: 2.3rem;
             width: 100%;
             a{
                 width: 35%;
@@ -154,32 +182,38 @@
                 font-weight: 600;
                 padding: 2rem;
                 border-radius: 1.5rem;
-                box-shadow: 4px 10px 4px 0px rgba(50,61,91,0.1)
+                box-shadow: 4px 10px 4px 0px rgba(50,61,91,0.1);
+                transition: 0.5s ease;
             }
             a:hover{
                 transition: 0.5s ease;
                 background-color: $clr-darkorange;
             }
         }
+
     
     .g__maps{
         .map__container{
-            padding-top: 9rem;
+            padding-top: 8rem;
             display: flex;
             iframe{
-            width: 100%;
-            height: 50vh;
+                width: 100%;
+                height: 50vh;
             }
         }
-    }   
-}
+    } 
+    &__text{
+        margin: 0 auto;
+        width: 80%;
+    }
+}  
+
  @include mediaQuery($break-md){
     .contact{
         &__wrapper{
             .contact__wrapper__box{
                 display: flex;
                 gap: 2rem;
-                max-width: 100%;
                 .contact__item{
                     padding: 2rem;
                     i{
@@ -204,17 +238,17 @@
                     h6{
                         color: $clr-light;
                         font-size: 2rem;
-                        font-weight: 600;
+                        font-weight: 300;
                         padding-top: 0rem;
-                        font-family: $ff-primary;
+                        font-family: Fredoka One;
                     }
                     h6:hover{
                         transition: 0.5s ease;
                         color: black;
                     }
                     a{
-                        text-decoration: underline;
-                        font-size: 2rem;
+                        // text-decoration: underline;
+                        font-size: 1.8rem;
                         font-weight: 500;
                         color: $clr-light;
                     }
@@ -294,7 +328,7 @@
                 color: $clr-violet;
                 margin: 0  auto;
                 width: 100%;
-                padding: 2rem;
+                
             }
         }
          &__us{
@@ -320,8 +354,7 @@
             }
         }
         .mess__btn{
-             padding: 2rem;
-             padding-top: 3rem;
+             padding: 3rem;
              text-align: left;
              a{
                  width: 35%;
@@ -339,7 +372,6 @@
         }
     }
 }
-//  @include mediaQuery($break-lg)\
 @include mediaQuery($break-xl){
     .contact{
         &__wrapper{
@@ -356,8 +388,8 @@
                 }
                 p{
                     padding-top: 5rem;
-                    font-size: 2.5rem;
-                    max-width: 135rem;
+                    font-size: 2.2rem;
+                    max-width: 115rem;
                     line-height: 4rem;
                     color: #897cb7;
                 }
@@ -370,42 +402,39 @@
                 margin: 0 auto;
                 .contact__item{
                     padding: 4rem;
-
+                    width: 100%;
                     i{
                         font-size: 3.5rem;
                         color: yellow;
                         padding-bottom: 2rem;
                     }
                     h5{
-                        font-size: 30px;
+                        font-size: 3.5rem;
                         font-weight: 600;
                         color: $clr-light;
                         padding-bottom: 2rem;
                     }
                     p{
-                        font-size: 22px;
-                        padding-top: 1rem;
+                        font-size: 2.2rem;
                         font-family: $ff-secondary;
                         color: $clr-light;
                         padding-bottom: 1rem;
-                        margin: 0 auto;
                         line-height: 4rem;
-                        max-width: 37rem;
+                        max-width: 60rem;
                     }
                     h6{
                         color: $clr-light;
-                        font-size: 22px;
-                        font-weight: 600;
-                        padding-top: 0rem;
-                        font-family: $ff-primary;
-                        line-height: 5rem;
+                        font-size: 2.2rem;
+                        font-weight: 400;
+                        font-family: Fredoka One;
+                        line-height: 3.5rem;
                     }
                     h6:hover{
                         transition: 0.5s ease;
                         color: black;
                     }
                     a{
-                        text-decoration: underline;
+                        // text-decoration: underline;
                         font-size: 2.5rem;
                         font-weight: 500;
                         color: $clr-light;
@@ -424,16 +453,17 @@
                     font-weight: 400;
                 }
                 h2{
-                    font-size: 7rem;
+                    font-size: 6.4rem;
                     font-family: Fredoka One;
                     font-weight: 500;
                 }
                 p{
                     padding-top: 5rem;
-                    font-size: 2.5rem;
+                    font-size: 2.2rem;
                     max-width: 135rem;
                     line-height: 4rem;
                     color: #897cb7;
+                    max-width: 120rem;
                 } 
             }
 
@@ -443,8 +473,7 @@
             justify-content: center;
             align-items: center;
             .form__wrapper{
-                width: 80%;
-            
+                width: 100%;
                 .form{
                     display: flex;
                     flex-direction: column;
@@ -463,14 +492,24 @@
                             border-style: solid;
                             color: black;
                         }
+                        .input:focus{
+                            background-color: $clr-light;
+                            border-color: #d1ecff;
+                            color: $clr-violet;
+                        }
                     }
                     textarea{
                         border-radius: 2rem;
-                        font-size: 2.2rem;
+                        font-size: 2.5rem;
                         padding: 2rem;
                         background-color: #eef8ff;
                         border-color: #eef8ff;
                         border-style: solid;
+                    }
+                    textarea:focus{
+                        background-color: $clr-light;
+                        border-color: #d1ecff;
+                        color: $clr-violet;
                     }
                     ::placeholder{
                         color: $clr-violet;
@@ -485,17 +524,18 @@
                     a{
                         width: unset;
                         background-color: $clr-yellow;
-                        font-size: 3rem;
-                        font-weight: 600;
-                        padding: 2.5rem 5rem;
+                        font-size: 2.7rem;
+                        font-weight: 500;
+                        padding: 2.4rem 4.5rem;
                         border-radius: 1.5rem;
                         color: $clr-violet;
-                        box-shadow: 4px 10px 4px 0px rgba(50,61,91,0.1)
+                        box-shadow: 4px 10px 4px 0px rgba(50,61,91,0.1);
+                        font-family: Fredoka One;
                     }
                     a:hover{
                         transition: 0.5s ease;
                         background-color: $clr-darkorange;
-                    }
+                    } 
                 }
             }          
         }
