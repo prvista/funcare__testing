@@ -158,6 +158,13 @@ body {
   font-family: Fredoka One;
   src: url(../font/FredokaOne-Regular.ttf);
 }
+.container {
+  max-width: 130rem;
+  width: 100%;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
 .bg--blue {
   background: #0e9aff;
 }
