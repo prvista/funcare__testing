@@ -188,9 +188,13 @@
           font-size: 64px;
           width: 48rem;
           padding-bottom: 1.2rem;
+          font-family: Fredoka One;
+          font-weight: 100;
         }
 
         h2{
+          color: #ffffff;
+          font-family: "Open Sans", Sans-serif;
           font-size: 22px;
           line-height: 35px;
         }
@@ -1416,6 +1420,7 @@
                   fill: #fff;
                   transform-origin: center;
                   transform: rotateY(180deg) rotateX(183deg);
+                  margin-bottom: -1rem;
               }
               
           }
@@ -1597,6 +1602,7 @@
               &__2{
                   z-index: -1;
                   margin-top: -9px;
+                  // margin-bottom: -1rem;
                   svg{
                       width: calc(100% + 1.3px);
                       height: 60px;
@@ -1638,6 +1644,7 @@
           }
           &:nth-child(4) {
               margin-top: 20px;
+
               .item__content{
                   margin: 0px 10px 0px 20px;
               }
@@ -1648,6 +1655,7 @@
           }
           &:nth-child(5) {
               margin-top: 20px;
+
               .item__content{
                   margin: 0px 20px 0px 10px;
               }
@@ -1761,6 +1769,7 @@
               margin-top: 58px;
               display: flex;
               justify-content: end;
+              margin-bottom: -12.5rem;
           
               .item__content{
                   margin: 0px 27px 0px 27px;
@@ -1776,6 +1785,7 @@
           }
           &:nth-child(5) {
               margin-top: 58px;
+              margin-bottom: -12.5rem;
               .item__content{
                   margin: 0px 27px 0px 27px;
               }
@@ -1850,16 +1860,19 @@
 // BANNER SLIDEEEEER
 
 .banner__slider{
-  min-height: 20vh;
+  // padding: 40px 0px 30px 0px;
+  margin-top: 70px;
+  margin-bottom: 0px;
+  padding: 0px 0px 60px 0px;
   &__wrapper{
-
+    align-items: center;
     .banner__slider__item{
     justify-content: center;
     // display: flex;
     // flex-direction: column;
     // max-width: 100%;
     // margin: 0 auto;
-    padding: 0 0 4.5rem 0;
+    // padding: 0 0 4.5rem 0;
     align-self: center;
       img{
         width: 204px;
@@ -1912,11 +1925,13 @@
           // flex-direction: column;
           // margin: 0 auto;
           h4{
-            font-size: 24px;
+            margin: 0 auto;
+            font-size: 22px;
             width: 650px;
             padding: 20px 0px 10px 0px;
+            font-family: "Fredoka One", Sans-serif;
+            font-weight: 100;
             line-height: 36px;
-            margin: 0 auto;
           }
   
           p{
@@ -1931,6 +1946,9 @@
 
 @media screen and (min-width:1025px){
   .banner__slider{
+    margin-top: 120px;
+    margin-bottom: 0px;
+    padding: 180px 0px 90px 0px;
     &__wrapper{
 
       .banner__slider__item{
@@ -2085,7 +2103,9 @@
 
     &__text{
       display: flex;    
-      padding: 78px 0 72px 0;
+      // padding: 78px 0 72px 0;
+      // padding: 150px 0px 95px 0px;
+      padding: 150px 0px 55px 0px;
 
 
       .lower__wave__text__left{
@@ -2131,6 +2151,24 @@
         padding-right: unset;
         }
       }
+    }
+  }
+}
+
+
+
+
+// BANNER SLIDER SHAPES 
+
+
+.banner__slider__shapes{
+  &__wrapper{
+    &:first-child{
+
+    }
+    
+    &:nth-child(2){
+
     }
   }
 }

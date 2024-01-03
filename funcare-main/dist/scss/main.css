@@ -830,6 +830,7 @@ body {
   position: absolute;
   display: block;
   width: 80%;
+  max-width: 100%;
   height: 100vh;
   top: 0;
   right: -100rem;
@@ -1286,8 +1287,12 @@ body {
     font-size: 64px;
     width: 48rem;
     padding-bottom: 1.2rem;
+    font-family: Fredoka One;
+    font-weight: 100;
   }
   .banner__text h2 {
+    color: #ffffff;
+    font-family: "Open Sans", Sans-serif;
     font-size: 22px;
     line-height: 35px;
   }
@@ -2122,6 +2127,7 @@ body {
   fill: #fff;
   transform-origin: center;
   transform: rotateY(180deg) rotateX(183deg);
+  margin-bottom: -1rem;
 }
 .center .centers__container {
   position: relative;
@@ -2388,6 +2394,7 @@ body {
     margin-top: 58px;
     display: flex;
     justify-content: end;
+    margin-bottom: -12.5rem;
   }
   .center .item:nth-child(4) .item__content {
     margin: 0px 27px 0px 27px;
@@ -2400,6 +2407,7 @@ body {
   }
   .center .item:nth-child(5) {
     margin-top: 58px;
+    margin-bottom: -12.5rem;
   }
   .center .item:nth-child(5) .item__content {
     margin: 0px 27px 0px 27px;
@@ -2453,11 +2461,15 @@ body {
 }
 
 .banner__slider {
-  min-height: 20vh;
+  margin-top: 70px;
+  margin-bottom: 0px;
+  padding: 0px 0px 60px 0px;
+}
+.banner__slider__wrapper {
+  align-items: center;
 }
 .banner__slider__wrapper .banner__slider__item {
   justify-content: center;
-  padding: 0 0 4.5rem 0;
   align-self: center;
 }
 .banner__slider__wrapper .banner__slider__item img {
@@ -2492,11 +2504,13 @@ body {
     text-align: center;
   }
   .banner__slider__wrapper .banner__slider__item .banner__slider__item__text h4 {
-    font-size: 24px;
+    margin: 0 auto;
+    font-size: 22px;
     width: 650px;
     padding: 20px 0px 10px 0px;
+    font-family: "Fredoka One", Sans-serif;
+    font-weight: 100;
     line-height: 36px;
-    margin: 0 auto;
   }
   .banner__slider__wrapper .banner__slider__item .banner__slider__item__text p {
     color: #03cb8f;
@@ -2504,6 +2518,11 @@ body {
   }
 }
 @media screen and (min-width: 1025px) {
+  .banner__slider {
+    margin-top: 120px;
+    margin-bottom: 0px;
+    padding: 180px 0px 90px 0px;
+  }
   .banner__slider__wrapper .banner__slider__item {
     align-self: center;
     text-align: center;
@@ -2599,7 +2618,7 @@ body {
   }
   .lower__wave__text {
     display: flex;
-    padding: 78px 0 72px 0;
+    padding: 150px 0px 55px 0px;
   }
   .lower__wave__text .lower__wave__text__left {
     padding: 0px 27px 0px 0;
