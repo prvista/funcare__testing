@@ -2862,6 +2862,52 @@ body {
   transform: translateX(-200px) translateY(-327px);
 }
 
+@media screen and (min-width: 1025px) {
+  .banner__slider__shapes__wrapper {
+    position: relative;
+    height: 2rem;
+  }
+  .banner__slider__shapes__wrapper svg:first-child {
+    transform: translateX(454px) translateY(-516px);
+  }
+  .banner__slider__shapes__wrapper svg:nth-child(2) {
+    position: absolute;
+    display: flex;
+    top: -539px;
+    right: 291px;
+    z-index: 2;
+  }
+  .banner__slider__shapes__wrapper svg:nth-child(3) {
+    transform: translateX(294px) translateY(-467px);
+    z-index: -99;
+    position: absolute;
+  }
+  .banner__slider__shapes__wrapper svg:nth-child(4) {
+    position: absolute;
+    top: -449px;
+    right: 518px;
+    z-index: -1;
+  }
+  .banner__slider__shapes__wrapper svg:nth-child(5) {
+    transform: translateY(-409px);
+    position: absolute;
+    right: 368px;
+  }
+  .banner__slider__shapes__wrapper svg:nth-child(6) {
+    transform: translateX(417px) translateY(-281px);
+    position: absolute;
+    z-index: -1;
+  }
+  .banner__slider__shapes__wrapper svg:nth-child(7) {
+    transform: translateY(-300px);
+    position: absolute;
+    right: 492px;
+    z-index: -1;
+  }
+  .banner__slider__shapes__wrapper svg:last-child {
+    transform: translateX(149px) translateY(-376px);
+  }
+}
 .contact__us {
   text-align: center;
 }

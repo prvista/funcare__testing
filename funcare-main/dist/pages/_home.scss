@@ -2220,3 +2220,70 @@
    
   }
 }
+
+
+@media screen and (min-width:1025px){
+  .banner__slider__shapes{
+    &__wrapper{
+      position: relative;
+      height: 2rem;
+      svg{
+         // star
+      &:first-child{
+        transform: translateX(454px) translateY(-516px);
+      }
+  
+      // hash
+      &:nth-child(2){
+        position: absolute;
+        display: flex;
+        top: -539px;
+        right: 291px;
+        z-index: 2;
+      }
+  
+      // rocket
+      &:nth-child(3){
+        transform: translateX(294px) translateY(-467px);
+        z-index: -99;
+        position: absolute;
+      }
+      // big green cicle
+      &:nth-child(4){
+        position: absolute;
+        top: -449px;
+        right: 518px;
+        z-index: -1;
+      }
+  
+      // small violet
+      &:nth-child(5){
+        transform: translateY(-409px);
+        position: absolute;
+        right: 368px;
+      }
+  
+      // yellow
+      &:nth-child(6){
+        transform: translateX(417px) translateY(-281px);
+        position: absolute;
+        z-index: -1;
+      }
+  
+      // halfmoon
+      &:nth-child(7){
+        transform: translateY(-300px);
+        position: absolute;
+        right: 492px;
+        z-index: -1;
+      }
+  
+      // green circle
+      &:last-child{
+        transform: translateX(149px) translateY(-376px);
+      }
+      }
+     
+    }
+  }
+}
