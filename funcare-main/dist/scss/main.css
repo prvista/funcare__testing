@@ -2463,7 +2463,6 @@ body {
 .banner__slider {
   margin-top: 70px;
   margin-bottom: 0px;
-  padding: 0px 0px 60px 0px;
 }
 .banner__slider__wrapper {
   align-items: center;
@@ -2655,6 +2654,45 @@ body {
     padding-right: unset;
   }
 }
+.banner__slider__shapes__wrapper {
+  position: relative;
+  height: 2rem;
+}
+.banner__slider__shapes__wrapper svg:first-child {
+  transform: translateX(541px) translateY(-479px);
+}
+.banner__slider__shapes__wrapper svg:nth-child(2) {
+  position: absolute;
+  display: flex;
+  top: -412px;
+  right: -54px;
+  z-index: 2;
+}
+.banner__slider__shapes__wrapper svg:nth-child(3) {
+  transform: translateX(-103px) translateY(-389px);
+}
+.banner__slider__shapes__wrapper svg:nth-child(4) {
+  position: absolute;
+  top: -492px;
+  right: 478px;
+}
+.banner__slider__shapes__wrapper svg:nth-child(5) {
+  transform: translateY(-304px);
+  position: absolute;
+  right: 25px;
+}
+.banner__slider__shapes__wrapper svg:nth-child(6) {
+  transform: translateX(-90px) translateY(-298px);
+}
+.banner__slider__shapes__wrapper svg:nth-child(7) {
+  transform: translateY(-256px);
+  position: absolute;
+  right: 23px;
+}
+.banner__slider__shapes__wrapper svg:last-child {
+  transform: translateX(-200px) translateY(-327px);
+}
+
 .contact__us {
   text-align: center;
 }
