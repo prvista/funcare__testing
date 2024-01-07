@@ -1,6 +1,7 @@
 .contact{
     &__us{
         text-align: center;
+        padding-top: 4.5rem;
         h4{
             font-size: 2rem;
             font-weight: 500;
@@ -17,29 +18,44 @@
             font-family: $ff-secondary;
             font-size: 1.8rem;
             color: $clr-lightviolet;
-            margin: 0  auto;
-            padding: 2rem 2.6rem 2.6rem 2.6rem;
-            max-width: 50rem;
+            max-width: 40rem;
             line-height: 2.7rem;
+            margin: 0 auto;
+            width: 100%;
+            padding-top: 2rem;
+            padding-bottom: 3rem;
         }
     } 
-
 
     .item__container{
      display: flex;
      flex-direction: column;
      margin: 0 auto;
-     padding: 2rem;
      line-height: 2rem;
         .contact__item{
-        display: block;
+        align-items: center;
         text-align: center;
         border-radius: 10px;
         margin-bottom: 2.5rem;
-        padding: 3.5rem 1.5rem 1rem 1.5rem;
+        // padding: 3.5rem 1.5rem 1rem 1.5rem;
+        padding: 2rem;
+        width: 100%;
             &:first-child{
+                padding-top: 3.5rem;
+            }
+            &:nth-child(2){
+                padding-bottom: 3rem;
+                padding-top: 3.5rem;
                 p{
-                    max-width: 60rem;
+                    padding-bottom: 1rem;
+                }
+            }
+            &:last-child{
+                padding-top: 3.5rem;
+                p{
+                   max-width: 25rem;
+                   margin: 0 auto;
+                   line-height: 1.5;
                 }
             }
             i{
@@ -48,43 +64,60 @@
                 padding-bottom: 1rem;
             }
             h5{
-                font-size: 2rem;
-                font-weight: 600;
+                font-size: 20px;
                 color: $clr-light;
                 padding-bottom: 1rem;
+                font-family: "Fredoka One", Sans-serif;
             }
             p{
                 font-size: 1.7rem;
                 font-family: $ff-secondary;
                 color: $clr-light;
-                max-width: 40rem;
-                padding: 2rem;
+                // max-width: 40rem;
+                padding-bottom: 2rem;
+                width: 100%;
             }
             h6{
                 color: $clr-light;
-                font-size: 1.5rem;
+                font-size: 1.6rem;
                 font-weight: 500;
                 font-family: Fredoka One;
+                padding-top: 0.5rem;
             }
             h6:hover{
                 transition: 0.5s ease;
                 color: black;
             }
-            a{
-                // text-decoration: underline;
-                font-size: 1.8rem;
-                font-weight: 500;
-                color: $clr-light;
-            }
-            a:hover{
-                transition: 0.5s ease;
-                color: black;
-            }
+            // a{
+            //     text-decoration: underline;
+            //     font-size: 1.8rem;
+            //     font-weight: 500;
+            //     color: $clr-light;
+            //     span{
+            //         text-decoration: underline; 
+            //         color: $clr-light;
+            //     }
+            // }
+            // a:hover{
+            //     transition: 0.5s ease;
+            //     color: black;
+
+            // }
+
             span{
-                background-color: $clr-light;
-                z-index: -999;
-                width: 2rem;
-                height: 2rem;
+                text-decoration: underline;
+                color: $clr-light;
+                text-underline-offset: 0.2rem;
+                font-size: 2rem;
+                a{
+                    color: $clr-light;
+                    font-family: $ff-secondary;
+                    font-size: 1.7rem;
+                    font-weight: 600;
+                    &:hover{
+                        color: $clr-dark;
+                    }
+                }
             }
         }
     } 
@@ -107,7 +140,8 @@
                 font-size: 1.8rem;
                 color: $clr-lightviolet;
                 margin: 0  auto;
-                padding: 2rem 2.6rem 0.5rem 2.6rem;
+                max-width: 45rem;
+                padding-top: 1rem;
             }
         }  
          
@@ -128,7 +162,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
-                padding-bottom: 2rem;
+                padding-bottom: 3rem;
                     .input{
                         border-radius: 1rem;
                         font-size: 1.7rem;
@@ -149,7 +183,7 @@
             }
         .textarea{
             border-radius: 1rem;
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             background-color: #eef8ff;
             border-color: #eef8ff;
             border-style: solid;
@@ -178,12 +212,14 @@
             a{
                 width: 35%;
                 background-color: $clr-yellow;
-                font-size: 2.2rem;
-                font-weight: 600;
+                font-size: 2rem;
+                font-weight: 400;
                 padding: 2rem;
                 border-radius: 1.5rem;
                 box-shadow: 4px 10px 4px 0px rgba(50,61,91,0.1);
                 transition: 0.5s ease;
+                font-family: Fredoka One;
+                color: $clr-purple;
             }
             a:hover{
                 transition: 0.5s ease;
@@ -193,29 +229,61 @@
 
     
     .g__maps{
+        margin-bottom: 0;
         .map__container{
             padding-top: 8rem;
             display: flex;
+            height: auto;
             iframe{
                 width: 100%;
                 height: 50vh;
+                filter: brightness( 100% ) contrast( 100% ) saturate( 66% ) blur( 0px ) hue-rotate( 0deg );
             }
         }
     } 
     &__text{
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
     }
 }  
 
- @include mediaQuery($break-md){
+.background__svg {
+    z-index: -9999;
+}
+
+ @include mediaQuery($break-mc){
     .contact{
         &__wrapper{
+            .item__container{
             .contact__wrapper__box{
                 display: flex;
                 gap: 2rem;
                 .contact__item{
-                    padding: 2rem;
+                    padding: 1rem;
+                    &:first-child{
+                        padding-top: 2rem;
+                    }
+                    &:nth-child(2){
+                        width: 100%;
+                        padding-top: 2rem;
+                        padding-bottom: 1rem;
+                            p{
+
+                            }
+                    }
+                    &:last-child{
+                        width: 100%;
+                        padding-top: 2rem;
+                        padding-bottom: 1rem;
+                        p{
+                            font-size: 16px;
+                            line-height: 1.4em;
+                            padding: unset;
+                            margin: 0 auto;
+                            max-width: 20rem;
+                            padding-bottom: 1rem;
+                        }
+                    }
                     i{
                         font-size: 3rem;
                         color: yellow;
@@ -223,23 +291,21 @@
                     }
                     h5{
                         font-size: 2rem;
-                        font-weight: 600;
                         color: $clr-light;
                         padding-bottom: 2rem;
                     }
                     p{
                         font-size: 1.7rem;
-                        padding-top: 0rem;
                         font-family: $ff-secondary;
                         color: $clr-light;
                         padding-bottom: 1rem;
-                        margin: 0 auto;
+                        margin: unset;
                     }
                     h6{
                         color: $clr-light;
-                        font-size: 2rem;
+                        font-size: 1.6rem;
                         font-weight: 300;
-                        padding-top: 0rem;
+                        // padding-top: 0rem;
                         font-family: Fredoka One;
                     }
                     h6:hover{
@@ -248,8 +314,8 @@
                     }
                     a{
                         // text-decoration: underline;
-                        font-size: 1.8rem;
-                        font-weight: 500;
+                        font-size: 1.6rem;
+                        font-weight: 600;
                         color: $clr-light;
                     }
                     a:hover{
@@ -257,7 +323,8 @@
                         color: black;
                     }  
                 }
-            } 
+            }
+        } 
  
              .form__container{
                 //  display: grid;
@@ -293,7 +360,7 @@
                      }
                      textarea{
                          border-radius: 2rem;
-                         font-size: 2.2rem;
+                         font-size: 1.7rem;
                          padding: 2rem;
                          background-color: #eef8ff;
                          border-color: #eef8ff;
@@ -307,25 +374,25 @@
             }   
         }
         .mess__us{
-            padding: 2rem;
-            padding-top: 3.5rem;
+            padding: 68px 0px 26px 0px;
             text-align: center;
-            padding-top: 2rem;
             h4{
-                font-size: 2.5rem;
-                font-weight: 1000;
+                font-size: 2.2rem;
+                font-weight: 500;
                 color: $clr-orange;
+                font-family: Fredoka One;
             }
             h2{
-                font-size: 4rem;
-                font-weight: 600;
+                font-size: 3.5rem;
+                font-weight: 500;
                 color: $clr-violet;
+                font-family: Fredoka One;
             }  
             p{
                 font-family: $ff-secondary;
-                font-size: 2.1rem;
+                font-size: 1.8rem;
                 padding-top: 1.8rem;
-                color: $clr-violet;
+                color: $clr-lightviolet;
                 margin: 0  auto;
                 width: 100%;
                 
@@ -333,35 +400,41 @@
         }
          &__us{
             text-align: center;
-            padding-top: 2rem;
+            padding-top: 1rem;
             h4{
-                font-size: 2.5rem;
-                font-weight: 1000;
+                font-size: 2.2rem;
+                font-weight: 500;
                 color: $clr-orange;
+                font-family: Fredoka One;
             }
             h2{
-                font-size: 4rem;
-                font-weight: 600;
+                font-size: 3.5rem;
+                font-weight: 500;
                 color: $clr-violet;
+                font-family: Fredoka One;
             }
             p{
                 font-family: $ff-secondary;
-                font-size: 2.1rem;
-                padding-top: 1.8rem;
-                color: $clr-violet;
+                font-size: 1.8rem;
+                color: $clr-lightviolet;
                 margin: 0  auto;
-                width: 100%;
+                max-width: 70rem;
+                line-height: 2.7rem;
+                padding: 2rem;
             }
         }
         .mess__btn{
-             padding: 3rem;
+             padding-top: 4.5rem;
              text-align: left;
+             padding-left: 2rem;
              a{
                  width: 35%;
                  background-color: $clr-yellow;
+                 color: $clr-violet;
                  font-size: 2.8rem;
-                 font-weight: 700;
-                 padding: 3rem 5rem;
+                 font-weight: 500;
+                 font-family: Fredoka One;
+                 padding: 2.3rem 4.5rem;
                  border-radius: 1.5rem;
                  box-shadow: 4px 10px 4px 0px rgba(50,61,91,0.1)
             }
@@ -370,19 +443,33 @@
                 background-color: $clr-darkorange;
             }
         }
+        .g__maps{
+            .map__container{
+                padding-top: 8rem;
+                display: flex;
+                iframe{
+                    width: 100%;
+                    height: 50vh;
+                }
+            }
+        } 
+    }
+    .contact__text{
+        margin: unset;
     }
 }
-@include mediaQuery($break-xl){
+@media screen and (min-width:1025px) {
     .contact{
         &__wrapper{
+
             .contact__us{
                 h4{
-                    font-size: 3.2rem;
+                    font-size: 3rem;
                     font-family: Fredoka One;
                     font-weight: 400;
                 }
                 h2{
-                    font-size: 7rem;
+                    font-size: 6.4rem;
                     font-family: Fredoka One;
                     font-weight: 500;
                 }
@@ -395,60 +482,113 @@
                 }
             }
          
-            .contact__wrapper__box{
+            .item__container{
                 display: flex;
-                gap: 6rem;
-                max-width: 140rem;
+                flex-direction: column;
                 margin: 0 auto;
-                .contact__item{
-                    padding: 4rem;
-                    width: 100%;
-                    i{
-                        font-size: 3.5rem;
-                        color: yellow;
-                        padding-bottom: 2rem;
-                    }
-                    h5{
-                        font-size: 3.5rem;
-                        font-weight: 600;
-                        color: $clr-light;
-                        padding-bottom: 2rem;
-                    }
-                    p{
-                        font-size: 2.2rem;
-                        font-family: $ff-secondary;
-                        color: $clr-light;
-                        padding-bottom: 1rem;
-                        line-height: 4rem;
-                        max-width: 60rem;
-                    }
-                    h6{
-                        color: $clr-light;
-                        font-size: 2.2rem;
-                        font-weight: 400;
-                        font-family: Fredoka One;
-                        line-height: 3.5rem;
-                    }
-                    h6:hover{
-                        transition: 0.5s ease;
-                        color: black;
-                    }
-                    a{
-                        // text-decoration: underline;
-                        font-size: 2.5rem;
-                        font-weight: 500;
-                        color: $clr-light;
-                    }
-                    a:hover{
-                        transition: 0.5s ease;
-                        color: black;
-                    }  
+                line-height: 2rem;
+                .contact__wrapper__box {
+                    gap: 4rem;
+                    .contact__item{
+                        align-items: center;
+                        text-align: center;
+                        border-radius: 10px;
+                        margin-bottom: 2.5rem;
+                        // padding: 3.5rem 1.5rem 1rem 1.5rem;
+                        padding: 2rem;
+                        width: 100%;
+                            &:first-child{
+                                padding-top: 3.5rem;
+                            }
+                            &:nth-child(2){
+                                padding-bottom: 3rem;
+                                padding-top: 3.5rem;
+                                p{
+                                    padding-bottom: 1rem;
+                                }
+                            }
+                            &:last-child{
+                                padding-top: 3.5rem;
+                                p{
+                                   max-width: 25rem;
+                                   margin: 0 auto;
+                                   font-size: 22px;
+                                   line-height: 35px;
+                                }
+                            }
+                            i{
+                                font-size: 3rem;
+                                color: yellow;
+                                padding-bottom: 1rem;
+                            }
+                            h5{
+                                font-size: 30px;
+                                color: $clr-light;
+                                padding-bottom: 1rem;
+                                font-family: "Fredoka One", Sans-serif;
+                                line-height: 1.2em;
+                            }
+                            p{
+                                font-size: 22px;
+                                line-height: 35px;
+                                font-family: $ff-secondary;
+                                color: $clr-light;
+                                // max-width: 40rem;
+                                padding-bottom: 2rem;
+                                width: 100%;
+                            }
+                            h6{
+                                color: $clr-light;
+                                font-size: 22px;
+                                line-height: 36px;
+                                font-weight: 500;
+                                font-family: Fredoka One;
+                                padding-top: 0.5rem;
+                            }
+                            h6:hover{
+                                transition: 0.5s ease;
+                                color: black;
+                            }
+                            // a{
+                            //     text-decoration: underline;
+                            //     font-size: 1.8rem;
+                            //     font-weight: 500;
+                            //     color: $clr-light;
+                            //     span{
+                            //         text-decoration: underline; 
+                            //         color: $clr-light;
+                            //     }
+                            // }
+                            // a:hover{
+                            //     transition: 0.5s ease;
+                            //     color: black;
+                
+                            // }
+                
+                            span{
+                                text-decoration: underline;
+                                color: $clr-light;
+                                text-underline-offset: 0.2rem;
+                                font-size: 2rem;
+                                a{
+                                    color: $clr-light;
+                                    font-family: $ff-secondary;
+                                    font-size: 22px;
+                                    line-height: 35px;
+                                    font-weight: 600;
+                                    &:hover{
+                                        color: $clr-dark;
+                                    }
+                                }
+                            }
+                        }
                 }
-            }
+               } 
+
             .mess__us{
                 padding-top: 10rem;
                 h4{
-                    font-size: 3.2rem;
+                    font-size: 3rem;
                     font-family: Fredoka One;
                     font-weight: 400;
                 }
@@ -458,12 +598,12 @@
                     font-weight: 500;
                 }
                 p{
-                    padding-top: 5rem;
+                    padding-top: 4rem;
                     font-size: 2.2rem;
                     max-width: 135rem;
                     line-height: 4rem;
                     color: #897cb7;
-                    max-width: 120rem;
+                    max-width: 110rem;
                 } 
             }
 
@@ -482,10 +622,10 @@
                     color: $clr-violet;
                     .form__input{
                         display: flex;
-                        gap: 3rem;
+                        gap: 6rem;
                         input{
                             border-radius: 2rem;
-                            font-size: 2.5rem;
+                            font-size: 2.1rem;
                             padding: 3rem;
                             background-color: #eef8ff;
                             border-color: #eef8ff;
@@ -500,7 +640,7 @@
                     }
                     textarea{
                         border-radius: 2rem;
-                        font-size: 2.5rem;
+                        font-size: 2.1rem;
                         padding: 2rem;
                         background-color: #eef8ff;
                         border-color: #eef8ff;
@@ -511,8 +651,6 @@
                         border-color: #d1ecff;
                         color: $clr-violet;
                     }
-
-                    
                     ::placeholder{
                         color: $clr-violet;
                     }
@@ -541,5 +679,15 @@
                 }
             }          
         }
+        .g__maps{
+            margin-bottom: 0;
+            .map__container{
+                padding-top: 8rem;
+                iframe {
+                    height: 515px;
+                    width: 100%;
+                }
+            }
+        } 
     }
 } 

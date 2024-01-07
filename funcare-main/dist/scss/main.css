@@ -1,5 +1,3 @@
-/*colors*/
-/*breakpoints*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -159,6 +157,13 @@ body {
   src: url(../font/FredokaOne-Regular.ttf);
 }
 .container {
+  max-width: 130rem;
+  width: 100%;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+.item__container {
   max-width: 130rem;
   width: 100%;
   padding: 1.5rem;
@@ -994,6 +999,7 @@ body {
   position: absolute;
   display: block;
   width: 80%;
+  max-width: 100%;
   height: 100vh;
   top: 0;
   right: -100rem;
@@ -1450,8 +1456,12 @@ body {
     font-size: 64px;
     width: 48rem;
     padding-bottom: 1.2rem;
+    font-family: Fredoka One;
+    font-weight: 100;
   }
   .banner__text h2 {
+    color: #ffffff;
+    font-family: "Open Sans", Sans-serif;
     font-size: 22px;
     line-height: 35px;
   }
@@ -2246,12 +2256,388 @@ body {
   }
 }
 
+.center__wrapper {
+  width: 100%;
+}
+.center__title {
+  padding: 0px 0px 80px 0px;
+  width: 100%;
+}
+.center__title h1 {
+  text-align: center;
+  color: #ff7223;
+  font-family: Fredoka One, Sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+}
+.center__title h2 {
+  color: #483290;
+  font-family: Fredoka One, Sans-serif;
+  font-size: 28px;
+  line-height: 1.2em;
+  text-align: center;
+}
+.center__items__bg {
+  width: 100%;
+  margin-bottom: -127px;
+  position: relative;
+  z-index: -1;
+}
+.center__items__bg svg {
+  width: 100%;
+  transform: 180deg;
+  width: calc(100% + 1.3px);
+  height: 60px;
+  fill: #fff;
+}
+.center__items__bg__2 svg {
+  width: calc(100% + 1.3px);
+  height: 60px;
+  fill: #fff;
+  transform-origin: center;
+  transform: rotateY(180deg) rotateX(183deg);
+  margin-bottom: -1rem;
+}
+.center .centers__container {
+  position: relative;
+  z-index: 0;
+  background-color: #563cab;
+}
+.center .item {
+  width: 100%;
+}
+.center .item:nth-child(2) .item__image {
+  background-color: #0e9aff;
+}
+.center .item:nth-child(2) .item__text {
+  background-color: #0e9aff;
+}
+.center .item:nth-child(3) .item__image {
+  background-color: #fee400;
+}
+.center .item:nth-child(3) .item__text {
+  background-color: #fee400;
+}
+.center .item:nth-child(3) .item__text h3 {
+  color: #483290;
+}
+.center .item:nth-child(3) .item__text p {
+  color: #483290;
+}
+.center .item:nth-child(4) .item__image {
+  background-color: #ff7223;
+}
+.center .item:nth-child(4) .item__text {
+  background-color: #ff7223;
+}
+.center .item:nth-child(5) .item__image {
+  background-color: #c61fa1;
+}
+.center .item:nth-child(5) .item__text {
+  background-color: #c61fa1;
+}
+.center .item__content {
+  max-width: 100%;
+  height: auto;
+  margin: 0px 15px 30px 15px;
+}
+.center .item__image {
+  border-radius: 12px 12px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+.center .item__image img {
+  border-radius: 12px 12px 0px 0px;
+}
+.center .item__text {
+  border-radius: 0px 0px 12px 12px;
+}
+.center .item__text__title {
+  display: flex;
+  padding: 12px 0px 0px 20px;
+}
+.center .item__text__title h3 {
+  font-size: 20px;
+  color: #ffffff;
+  font-family: Fredoka One, Sans-serif;
+  margin: 15px 0;
+}
+.center .item__text__title span {
+  display: flex;
+  margin: -41px 20px 15px 40px;
+  font-size: 90px;
+}
+.center .item__text__title span svg {
+  width: 1em;
+  height: 1em;
+  font-size: 90px;
+}
+.center .item__address {
+  padding: 0px 20px 0px 20px;
+}
+.center .item__address p {
+  font-size: 16px;
+  line-height: 1.3em;
+  color: #ffffff;
+  font-family: "Open Sans", Sans-serif;
+}
+.center .item__btn {
+  display: flex;
+  align-items: flex-start;
+  padding: 24px 0px 35px 20px;
+}
+.center .item__btn a {
+  font-family: "Fredoka One", Sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 12px;
+  box-shadow: 4px 10px 4px 0px rgba(50, 61, 91, 0.1);
+  padding: 18px 34px;
+  color: #483290;
+  background-color: #ffffff;
+  transition: 0.4s ease;
+}
+.center .item__btn a:hover {
+  background-color: #483290;
+  color: #ffffff;
+  transition: 0.4s ease;
+}
+@media screen and (min-width: 767px) {
+  .center__wrapper {
+    width: 100%;
+  }
+  .center__title {
+    padding: 0px 0px 80px 0px;
+    width: 100%;
+  }
+  .center__title h1 {
+    font-size: 22px;
+  }
+  .center__title h2 {
+    font-size: 35px;
+  }
+  .center__items__bg {
+    width: 100%;
+    margin-bottom: -127px;
+    position: relative;
+    z-index: -1;
+  }
+  .center__items__bg__2 {
+    width: 100%;
+  }
+  .center__items__bg__2 svg {
+    height: 60px;
+    fill: #fff;
+    transform-origin: center;
+    transform: rotateY(180deg) rotateX(183deg);
+  }
+  .center__items__bg__2 {
+    z-index: -1;
+    margin-top: -9px;
+  }
+  .center__items__bg__2 svg {
+    width: calc(100% + 1.3px);
+    height: 60px;
+  }
+  .center .centers__container {
+    position: relative;
+    z-index: 0;
+    background-color: #563cab;
+  }
+  .center .centers__container__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .center .item {
+    display: block;
+    width: 50%;
+    height: 100%;
+  }
+  .center .item:nth-child(2) {
+    margin-top: -60px;
+  }
+  .center .item:nth-child(2) .item__content {
+    margin: 0px 10px 0px 20px;
+  }
+  .center .item:nth-child(2) .item__text {
+    min-height: 255px;
+  }
+  .center .item:nth-child(3) {
+    margin-top: -60px;
+  }
+  .center .item:nth-child(3) .item__content {
+    margin: 0px 20px 0px 10px;
+  }
+  .center .item:nth-child(4) {
+    margin-top: 20px;
+  }
+  .center .item:nth-child(4) .item__content {
+    margin: 0px 10px 0px 20px;
+  }
+  .center .item:nth-child(4) .item__text {
+    min-height: 255px;
+  }
+  .center .item:nth-child(5) {
+    margin-top: 20px;
+  }
+  .center .item:nth-child(5) .item__content {
+    margin: 0px 20px 0px 10px;
+  }
+  .center .item__content {
+    max-width: 100%;
+    height: 100%;
+  }
+  .center .item__text {
+    width: 100%;
+  }
+  .center .item__text__title {
+    display: flex;
+    padding: 12px 0px 0px 20px;
+  }
+  .center .item__text__title h3 {
+    font-size: 24px;
+    margin: 15px 0;
+    line-height: 36px;
+    line-height: 1.1em;
+  }
+  .center .item__text__title span {
+    margin: -35px 20px 15px 40px;
+    font-size: 90px;
+  }
+  .center .item__text__address p {
+    font-size: 16px;
+  }
+  .center .item__btn {
+    padding: 24px 0px 42px 20px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .center__wrapper {
+    width: 100%;
+  }
+  .center__title {
+    padding: 90px 0px 150px 0px;
+    width: 100%;
+  }
+  .center__title h1 {
+    font-size: 30px;
+  }
+  .center__title h2 {
+    font-size: 64px;
+  }
+  .center .centers__container {
+    position: relative;
+    z-index: 0;
+    background-color: #563cab;
+  }
+  .center .centers__container__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .center .item {
+    display: block;
+    width: 50%;
+    height: 100%;
+  }
+  .center .item:nth-child(2) {
+    display: flex;
+    justify-content: end;
+    margin-top: -60px;
+  }
+  .center .item:nth-child(2) .item__content {
+    margin: 0px 27px 0px 27px;
+  }
+  .center .item:nth-child(2) .item__text {
+    min-height: unset;
+  }
+  .center .item:nth-child(3) {
+    margin-top: -60px;
+  }
+  .center .item:nth-child(3) .item__content {
+    margin: 0px 27px 0px 27px;
+  }
+  .center .item:nth-child(3) .item__text__title span {
+    margin: -98px 0px 0px 63px;
+  }
+  .center .item:nth-child(4) {
+    margin-top: 58px;
+    display: flex;
+    justify-content: end;
+    margin-bottom: -12.5rem;
+  }
+  .center .item:nth-child(4) .item__content {
+    margin: 0px 27px 0px 27px;
+  }
+  .center .item:nth-child(4) .item__text {
+    min-height: unset;
+  }
+  .center .item:nth-child(4) .item__text__title span {
+    margin: -98px 0px 0px 95px;
+  }
+  .center .item:nth-child(5) {
+    margin-top: 58px;
+    margin-bottom: -12.5rem;
+  }
+  .center .item:nth-child(5) .item__content {
+    margin: 0px 27px 0px 27px;
+  }
+  .center .item:nth-child(5) .item__text {
+    min-height: unset;
+  }
+  .center .item:nth-child(5) .item__text__title span {
+    margin: -98px 0px 0px 59px;
+  }
+  .center .item__content {
+    max-width: 630px;
+    height: 100%;
+  }
+  .center .item__text {
+    width: 100%;
+  }
+  .center .item__text__title {
+    display: flex;
+    padding: 26px 0px 0px 40px;
+    width: 100%;
+  }
+  .center .item__text__title h3 {
+    width: 80%;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .center .item__text__title span {
+    width: 20%;
+    align-items: flex-start;
+    margin: -98px 0px 0px 144px;
+  }
+  .center .item__text__title span svg {
+    font-size: 134px;
+  }
+  .center .item__address {
+    padding: 0px 0px 0px 40px;
+  }
+  .center .item__address p {
+    line-height: 1em;
+    font-size: 18px;
+  }
+  .center .item__btn {
+    padding: 29px 0px 42px 39px;
+  }
+}
+@media screen and (min-width: 1134px) {
+  .center .item__text {
+    min-height: unset;
+  }
+}
+
 .banner__slider {
-  min-height: 20vh;
+  margin-top: 70px;
+  margin-bottom: 0px;
+}
+.banner__slider__wrapper {
+  align-items: center;
 }
 .banner__slider__wrapper .banner__slider__item {
   justify-content: center;
-  padding: 0 0 4.5rem 0;
   align-self: center;
 }
 .banner__slider__wrapper .banner__slider__item img {
@@ -2286,11 +2672,13 @@ body {
     text-align: center;
   }
   .banner__slider__wrapper .banner__slider__item .banner__slider__item__text h4 {
-    font-size: 24px;
+    margin: 0 auto;
+    font-size: 22px;
     width: 650px;
     padding: 20px 0px 10px 0px;
+    font-family: "Fredoka One", Sans-serif;
+    font-weight: 100;
     line-height: 36px;
-    margin: 0 auto;
   }
   .banner__slider__wrapper .banner__slider__item .banner__slider__item__text p {
     color: #03cb8f;
@@ -2298,6 +2686,11 @@ body {
   }
 }
 @media screen and (min-width: 1025px) {
+  .banner__slider {
+    margin-top: 120px;
+    margin-bottom: 0px;
+    padding: 180px 0px 90px 0px;
+  }
   .banner__slider__wrapper .banner__slider__item {
     align-self: center;
     text-align: center;
@@ -2393,7 +2786,7 @@ body {
   }
   .lower__wave__text {
     display: flex;
-    padding: 78px 0 72px 0;
+    padding: 150px 0px 55px 0px;
   }
   .lower__wave__text .lower__wave__text__left {
     padding: 0px 27px 0px 0;
@@ -2430,8 +2823,94 @@ body {
     padding-right: unset;
   }
 }
+.banner__slider__shapes__wrapper {
+  position: relative;
+  height: 2rem;
+}
+.banner__slider__shapes__wrapper svg:first-child {
+  transform: translateX(541px) translateY(-479px);
+}
+.banner__slider__shapes__wrapper svg:nth-child(2) {
+  position: absolute;
+  display: flex;
+  top: -412px;
+  right: -54px;
+  z-index: 2;
+}
+.banner__slider__shapes__wrapper svg:nth-child(3) {
+  transform: translateX(-103px) translateY(-389px);
+}
+.banner__slider__shapes__wrapper svg:nth-child(4) {
+  position: absolute;
+  top: -492px;
+  right: 478px;
+}
+.banner__slider__shapes__wrapper svg:nth-child(5) {
+  transform: translateY(-304px);
+  position: absolute;
+  right: 25px;
+}
+.banner__slider__shapes__wrapper svg:nth-child(6) {
+  transform: translateX(-90px) translateY(-298px);
+}
+.banner__slider__shapes__wrapper svg:nth-child(7) {
+  transform: translateY(-256px);
+  position: absolute;
+  right: 23px;
+}
+.banner__slider__shapes__wrapper svg:last-child {
+  transform: translateX(-200px) translateY(-327px);
+}
+
+@media screen and (min-width: 1025px) {
+  .banner__slider__shapes__wrapper {
+    position: relative;
+    height: 2rem;
+  }
+  .banner__slider__shapes__wrapper svg:first-child {
+    transform: translateX(454px) translateY(-516px);
+  }
+  .banner__slider__shapes__wrapper svg:nth-child(2) {
+    position: absolute;
+    display: flex;
+    top: -539px;
+    right: 291px;
+    z-index: 2;
+  }
+  .banner__slider__shapes__wrapper svg:nth-child(3) {
+    transform: translateX(294px) translateY(-467px);
+    z-index: -99;
+    position: absolute;
+  }
+  .banner__slider__shapes__wrapper svg:nth-child(4) {
+    position: absolute;
+    top: -449px;
+    right: 518px;
+    z-index: -1;
+  }
+  .banner__slider__shapes__wrapper svg:nth-child(5) {
+    transform: translateY(-409px);
+    position: absolute;
+    right: 368px;
+  }
+  .banner__slider__shapes__wrapper svg:nth-child(6) {
+    transform: translateX(417px) translateY(-281px);
+    position: absolute;
+    z-index: -1;
+  }
+  .banner__slider__shapes__wrapper svg:nth-child(7) {
+    transform: translateY(-300px);
+    position: absolute;
+    right: 492px;
+    z-index: -1;
+  }
+  .banner__slider__shapes__wrapper svg:last-child {
+    transform: translateX(149px) translateY(-376px);
+  }
+}
 .contact__us {
   text-align: center;
+  padding-top: 4.5rem;
 }
 .contact__us h4 {
   font-size: 2rem;
@@ -2449,27 +2928,44 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
   color: #7f70b1;
-  margin: 0 auto;
-  padding: 2rem 2.6rem 2.6rem 2.6rem;
-  max-width: 50rem;
+  max-width: 40rem;
   line-height: 2.7rem;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 .contact .item__container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 2rem;
   line-height: 2rem;
 }
 .contact .item__container .contact__item {
-  display: block;
+  align-items: center;
   text-align: center;
   border-radius: 10px;
   margin-bottom: 2.5rem;
-  padding: 3.5rem 1.5rem 1rem 1.5rem;
+  padding: 2rem;
+  width: 100%;
 }
-.contact .item__container .contact__item:first-child p {
-  max-width: 60rem;
+.contact .item__container .contact__item:first-child {
+  padding-top: 3.5rem;
+}
+.contact .item__container .contact__item:nth-child(2) {
+  padding-bottom: 3rem;
+  padding-top: 3.5rem;
+}
+.contact .item__container .contact__item:nth-child(2) p {
+  padding-bottom: 1rem;
+}
+.contact .item__container .contact__item:last-child {
+  padding-top: 3.5rem;
+}
+.contact .item__container .contact__item:last-child p {
+  max-width: 25rem;
+  margin: 0 auto;
+  line-height: 1.5;
 }
 .contact .item__container .contact__item i {
   font-size: 3rem;
@@ -2477,42 +2973,43 @@ body {
   padding-bottom: 1rem;
 }
 .contact .item__container .contact__item h5 {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 20px;
   color: #ffffff;
   padding-bottom: 1rem;
+  font-family: "Fredoka One", Sans-serif;
 }
 .contact .item__container .contact__item p {
   font-size: 1.7rem;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  max-width: 40rem;
-  padding: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
 }
 .contact .item__container .contact__item h6 {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
   font-family: Fredoka One;
+  padding-top: 0.5rem;
 }
 .contact .item__container .contact__item h6:hover {
   transition: 0.5s ease;
   color: black;
 }
-.contact .item__container .contact__item a {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #ffffff;
-}
-.contact .item__container .contact__item a:hover {
-  transition: 0.5s ease;
-  color: black;
-}
 .contact .item__container .contact__item span {
-  background-color: #ffffff;
-  z-index: -999;
-  width: 2rem;
-  height: 2rem;
+  text-decoration: underline;
+  color: #ffffff;
+  text-underline-offset: 0.2rem;
+  font-size: 2rem;
+}
+.contact .item__container .contact__item span a {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.contact .item__container .contact__item span a:hover {
+  color: #2b2b2b;
 }
 .contact .mess__us {
   text-align: center;
@@ -2534,7 +3031,8 @@ body {
   font-size: 1.8rem;
   color: #7f70b1;
   margin: 0 auto;
-  padding: 2rem 2.6rem 0.5rem 2.6rem;
+  max-width: 45rem;
+  padding-top: 1rem;
 }
 .contact .form {
   gap: 1rem;
@@ -2550,7 +3048,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 .contact .form .form__input .input {
   border-radius: 1rem;
@@ -2570,7 +3068,7 @@ body {
 }
 .contact .textarea {
   border-radius: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   background-color: #eef8ff;
   border-color: #eef8ff;
   border-style: solid;
@@ -2603,74 +3101,103 @@ body {
 .contact .mess__btn a {
   width: 35%;
   background-color: #fee500;
-  font-size: 2.2rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 400;
   padding: 2rem;
   border-radius: 1.5rem;
   box-shadow: 4px 10px 4px 0px rgba(50, 61, 91, 0.1);
   transition: 0.5s ease;
+  font-family: Fredoka One;
+  color: #563cab;
 }
 .contact .mess__btn a:hover {
   transition: 0.5s ease;
   background-color: #ffa012;
 }
+.contact .g__maps {
+  margin-bottom: 0;
+}
 .contact .g__maps .map__container {
   padding-top: 8rem;
   display: flex;
+  height: auto;
 }
 .contact .g__maps .map__container iframe {
   width: 100%;
   height: 50vh;
+  filter: brightness(100%) contrast(100%) saturate(66%) blur(0px) hue-rotate(0deg);
 }
 .contact__text {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 
-@media screen and (min-width: 760px) {
-  .contact__wrapper .contact__wrapper__box {
+.background__svg {
+  z-index: -9999;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__wrapper .item__container .contact__wrapper__box {
     display: flex;
     gap: 2rem;
   }
-  .contact__wrapper .contact__wrapper__box .contact__item {
-    padding: 2rem;
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item {
+    padding: 1rem;
   }
-  .contact__wrapper .contact__wrapper__box .contact__item i {
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item:first-child {
+    padding-top: 2rem;
+  }
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item:nth-child(2) {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item:last-child {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item:last-child p {
+    font-size: 16px;
+    line-height: 1.4em;
+    padding: unset;
+    margin: 0 auto;
+    max-width: 20rem;
+    padding-bottom: 1rem;
+  }
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item i {
     font-size: 3rem;
     color: yellow;
     padding-bottom: 2rem;
   }
-  .contact__wrapper .contact__wrapper__box .contact__item h5 {
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item h5 {
     font-size: 2rem;
-    font-weight: 600;
     color: #ffffff;
     padding-bottom: 2rem;
   }
-  .contact__wrapper .contact__wrapper__box .contact__item p {
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item p {
     font-size: 1.7rem;
-    padding-top: 0rem;
     font-family: "Open Sans", sans-serif;
     color: #ffffff;
     padding-bottom: 1rem;
-    margin: 0 auto;
+    margin: unset;
   }
-  .contact__wrapper .contact__wrapper__box .contact__item h6 {
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item h6 {
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 300;
-    padding-top: 0rem;
     font-family: Fredoka One;
   }
-  .contact__wrapper .contact__wrapper__box .contact__item h6:hover {
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item h6:hover {
     transition: 0.5s ease;
     color: black;
   }
-  .contact__wrapper .contact__wrapper__box .contact__item a {
-    font-size: 1.8rem;
-    font-weight: 500;
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item a {
+    font-size: 1.6rem;
+    font-weight: 600;
     color: #ffffff;
   }
-  .contact__wrapper .contact__wrapper__box .contact__item a:hover {
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item a:hover {
     transition: 0.5s ease;
     color: black;
   }
@@ -2700,7 +3227,7 @@ body {
   }
   .contact__wrapper .form textarea {
     border-radius: 2rem;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     padding: 2rem;
     background-color: #eef8ff;
     border-color: #eef8ff;
@@ -2713,61 +3240,67 @@ body {
     color: #483290;
   }
   .contact .mess__us {
-    padding: 2rem;
-    padding-top: 3.5rem;
+    padding: 68px 0px 26px 0px;
     text-align: center;
-    padding-top: 2rem;
   }
   .contact .mess__us h4 {
-    font-size: 2.5rem;
-    font-weight: 1000;
+    font-size: 2.2rem;
+    font-weight: 500;
     color: #FF7223;
+    font-family: Fredoka One;
   }
   .contact .mess__us h2 {
-    font-size: 4rem;
-    font-weight: 600;
+    font-size: 3.5rem;
+    font-weight: 500;
     color: #483290;
+    font-family: Fredoka One;
   }
   .contact .mess__us p {
     font-family: "Open Sans", sans-serif;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     padding-top: 1.8rem;
-    color: #483290;
+    color: #7f70b1;
     margin: 0 auto;
     width: 100%;
   }
   .contact__us {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
   .contact__us h4 {
-    font-size: 2.5rem;
-    font-weight: 1000;
+    font-size: 2.2rem;
+    font-weight: 500;
     color: #FF7223;
+    font-family: Fredoka One;
   }
   .contact__us h2 {
-    font-size: 4rem;
-    font-weight: 600;
+    font-size: 3.5rem;
+    font-weight: 500;
     color: #483290;
+    font-family: Fredoka One;
   }
   .contact__us p {
     font-family: "Open Sans", sans-serif;
-    font-size: 2.1rem;
-    padding-top: 1.8rem;
-    color: #483290;
+    font-size: 1.8rem;
+    color: #7f70b1;
     margin: 0 auto;
-    width: 100%;
+    max-width: 70rem;
+    line-height: 2.7rem;
+    padding: 2rem;
   }
   .contact .mess__btn {
-    padding: 3rem;
+    padding-top: 4.5rem;
     text-align: left;
+    padding-left: 2rem;
   }
   .contact .mess__btn a {
     width: 35%;
     background-color: #fee500;
+    color: #483290;
     font-size: 2.8rem;
-    font-weight: 700;
-    padding: 3rem 5rem;
+    font-weight: 500;
+    font-family: Fredoka One;
+    padding: 2.3rem 4.5rem;
     border-radius: 1.5rem;
     box-shadow: 4px 10px 4px 0px rgba(50, 61, 91, 0.1);
   }
@@ -2775,15 +3308,26 @@ body {
     transition: 0.5s ease;
     background-color: #ffa012;
   }
+  .contact .g__maps .map__container {
+    padding-top: 8rem;
+    display: flex;
+  }
+  .contact .g__maps .map__container iframe {
+    width: 100%;
+    height: 50vh;
+  }
+  .contact__text {
+    margin: unset;
+  }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1025px) {
   .contact__wrapper .contact__us h4 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-family: Fredoka One;
     font-weight: 400;
   }
   .contact__wrapper .contact__us h2 {
-    font-size: 7rem;
+    font-size: 6.4rem;
     font-family: Fredoka One;
     font-weight: 500;
   }
@@ -2794,60 +3338,95 @@ body {
     line-height: 4rem;
     color: #897cb7;
   }
-  .contact__wrapper .contact__wrapper__box {
+  .contact__wrapper .item__container {
     display: flex;
-    gap: 6rem;
-    max-width: 140rem;
+    flex-direction: column;
     margin: 0 auto;
+    line-height: 2rem;
   }
-  .contact__wrapper .contact__wrapper__box .contact__item {
-    padding: 4rem;
+  .contact__wrapper .item__container .contact__wrapper__box {
+    gap: 4rem;
+  }
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item {
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 2.5rem;
+    padding: 2rem;
     width: 100%;
   }
-  .contact__wrapper .contact__wrapper__box .contact__item i {
-    font-size: 3.5rem;
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item:first-child {
+    padding-top: 3.5rem;
+  }
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item:nth-child(2) {
+    padding-bottom: 3rem;
+    padding-top: 3.5rem;
+  }
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item:nth-child(2) p {
+    padding-bottom: 1rem;
+  }
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item:last-child {
+    padding-top: 3.5rem;
+  }
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item:last-child p {
+    max-width: 25rem;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item i {
+    font-size: 3rem;
     color: yellow;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
-  .contact__wrapper .contact__wrapper__box .contact__item h5 {
-    font-size: 3.5rem;
-    font-weight: 600;
-    color: #ffffff;
-    padding-bottom: 2rem;
-  }
-  .contact__wrapper .contact__wrapper__box .contact__item p {
-    font-size: 2.2rem;
-    font-family: "Open Sans", sans-serif;
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item h5 {
+    font-size: 30px;
     color: #ffffff;
     padding-bottom: 1rem;
-    line-height: 4rem;
-    max-width: 60rem;
+    font-family: "Fredoka One", Sans-serif;
+    line-height: 1.2em;
   }
-  .contact__wrapper .contact__wrapper__box .contact__item h6 {
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item p {
+    font-size: 22px;
+    line-height: 35px;
+    font-family: "Open Sans", sans-serif;
     color: #ffffff;
-    font-size: 2.2rem;
-    font-weight: 400;
-    font-family: Fredoka One;
-    line-height: 3.5rem;
+    padding-bottom: 2rem;
+    width: 100%;
   }
-  .contact__wrapper .contact__wrapper__box .contact__item h6:hover {
-    transition: 0.5s ease;
-    color: black;
-  }
-  .contact__wrapper .contact__wrapper__box .contact__item a {
-    font-size: 2.5rem;
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item h6 {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 36px;
     font-weight: 500;
-    color: #ffffff;
+    font-family: Fredoka One;
+    padding-top: 0.5rem;
   }
-  .contact__wrapper .contact__wrapper__box .contact__item a:hover {
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item h6:hover {
     transition: 0.5s ease;
     color: black;
+  }
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item span {
+    text-decoration: underline;
+    color: #ffffff;
+    text-underline-offset: 0.2rem;
+    font-size: 2rem;
+  }
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item span a {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 600;
+  }
+  .contact__wrapper .item__container .contact__wrapper__box .contact__item span a:hover {
+    color: #2b2b2b;
   }
   .contact__wrapper .mess__us {
     padding-top: 10rem;
   }
   .contact__wrapper .mess__us h4 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-family: Fredoka One;
     font-weight: 400;
   }
@@ -2857,12 +3436,12 @@ body {
     font-weight: 500;
   }
   .contact__wrapper .mess__us p {
-    padding-top: 5rem;
+    padding-top: 4rem;
     font-size: 2.2rem;
     max-width: 135rem;
     line-height: 4rem;
     color: #897cb7;
-    max-width: 120rem;
+    max-width: 110rem;
   }
   .contact__wrapper .form__container {
     display: flex;
@@ -2881,11 +3460,11 @@ body {
   }
   .contact__wrapper .form__container .form__wrapper .form .form__input {
     display: flex;
-    gap: 3rem;
+    gap: 6rem;
   }
   .contact__wrapper .form__container .form__wrapper .form .form__input input {
     border-radius: 2rem;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     padding: 3rem;
     background-color: #eef8ff;
     border-color: #eef8ff;
@@ -2899,7 +3478,7 @@ body {
   }
   .contact__wrapper .form__container .form__wrapper .form textarea {
     border-radius: 2rem;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     padding: 2rem;
     background-color: #eef8ff;
     border-color: #eef8ff;
@@ -2936,5 +3515,15 @@ body {
   .contact__wrapper .form__container .mess__btn a:hover {
     transition: 0.5s ease;
     background-color: #ffa012;
+  }
+  .contact .g__maps {
+    margin-bottom: 0;
+  }
+  .contact .g__maps .map__container {
+    padding-top: 8rem;
+  }
+  .contact .g__maps .map__container iframe {
+    height: 515px;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
