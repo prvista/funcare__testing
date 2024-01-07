@@ -183,13 +183,11 @@ body {
   }
   .faq__item__1 .faq__title__1 h4 {
     font-size: 2rem;
-    font-weight: 600;
     color: #ff7223;
     font-family: Fredoka One;
   }
   .faq__item__1 .faq__title__1 h2 {
     font-size: 3rem;
-    font-weight: 600;
     color: #483290;
     font-family: Fredoka One;
     margin-bottom: 2rem;
@@ -217,6 +215,7 @@ body {
   .faq__item__1 .faq__links h4:hover {
     background: #0e9aff;
     color: #eef8ff;
+    cursor: pointer;
   }
   .faq__item__1 .faq__links h4.active {
     background: #0e9aff;
@@ -225,23 +224,22 @@ body {
   .faq__item__1 .faq__links p {
     width: 42rem;
     text-align: center;
-    max-height: 0rem;
-    overflow: hidden;
-    transition: 0.5s ease;
     margin: 0 auto;
     text-align: justify;
     color: #8a76c0;
     margin-bottom: 2rem;
     font-family: "Open Sans", Sans-serif;
     font-size: 16px;
+    height: 0;
+    transition: height 0.5s ease;
+    overflow: hidden;
     visibility: hidden;
   }
   .faq__item__1 .faq__links p.down {
-    max-height: 50rem;
-    width: 42rem;
-    transition: 0.5s ease-in;
-    margin-top: 1.5rem;
+    height: 12rem;
     visibility: visible;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
   .faq__item__2 {
     display: flex;
@@ -260,7 +258,6 @@ body {
   }
   .faq__item__2 .faq__title__2 h2 {
     font-size: 28px;
-    font-weight: 600;
     color: #483290;
     font-family: "Fredoka One", Sans-serif;
   }
@@ -415,7 +412,10 @@ body {
     width: 53rem;
   }
   .faq__item__1 .faq__links p.down {
+    height: 11rem;
     width: 53rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
   }
   .faq__item__2 .faq__title__2 h4 {
     font-size: 22px;
@@ -540,9 +540,10 @@ body {
     width: 91rem;
   }
   .faq__item__1 .faq__links p.down {
+    height: 10rem;
     width: 91rem;
     margin-top: 3.5rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem;
   }
   .faq__item__2 .faq__title__2 h4 {
     font-size: 30px;
@@ -560,17 +561,11 @@ body {
   }
   .faq__links p {
     text-align: center;
-    max-height: 0rem;
     overflow: hidden;
-    transition: 0.5s ease;
     margin: 0 auto;
     text-align: justify;
     color: #8a76c0;
     margin-bottom: 2rem;
-  }
-  .faq__links p.down {
-    max-height: 50rem;
-    transition: 0.5s ease;
   }
   .faq__signup {
     padding-bottom: 10rem;
