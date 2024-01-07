@@ -251,7 +251,7 @@
     z-index: -9999;
 }
 
- @include mediaQuery($break-mc){
+ @include mediaQuery($break-md){
     .contact{
         &__wrapper{
             .item__container{

@@ -54,6 +54,7 @@
         }
         .burger__btn{
             i{
+                cursor: pointer;
                 color: #483290; 
                 font-size: 2rem;      
             }
@@ -102,7 +103,7 @@
     &__nav{
         // order: 992;
         padding: 20px 12px 40px 12px;
-        position: absolute;
+        position: fixed;
         display: block;
         width: 80%;
         max-width: 100%;
@@ -114,7 +115,6 @@
         background-color: #fff;
         transition: 0.5s ease;    
         z-index: 9999; 
-
         &.open{
             right: 0;
             // left: 0;
@@ -150,7 +150,7 @@
         .burger__btn__close{
             display: flex;
             justify-content: flex-end;
-
+            cursor: pointer;
         }
 
         &__bg{
@@ -166,6 +166,7 @@
             &.open{
                 left: 0;
                 background-color: rgba(0,0,0,.5); 
+                -webkit-overflow-scrolling: touch;
             }
         }   
     }
@@ -283,7 +284,8 @@
             .burger__btn__close{
                 display: flex;
                 justify-content: flex-end;
-    
+                cursor: pointer;
+
             }
     
             &__bg{

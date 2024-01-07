@@ -1379,6 +1379,94 @@
       }
   }
 
+  
+
+  &__shapes__bg{
+    z-index: -5;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    // top: 0;
+    left: 0;
+    overflow: hidden;
+    // pointer-events: none;
+    // -webkit-perspective: 1200px;
+    // perspective: 1200px;
+    .center__bgshape__1{
+      background-position: 94.5% 70%;
+      background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-23.svg);
+      // transform: matrix(1, 0, 0, 1, -13.1, 4.1);
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+    }
+    .center__bgshape__2{
+      background-position: 95% 50%;
+      background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-22.svg);
+      // transform: matrix(1, 0, 0, 1, 5.7, -0.6);
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+    }
+    .center__bgshape__3{
+      background-position: 90% 40%;
+      background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-21.svg);
+      // transform: matrix(1, 0, 0, 1, 3, 4.1);
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+    }
+    .center__bgshape__4{
+      background-position: 86% 15%;
+      background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Rectangle-51.svg);
+      // transform: matrix(1, 0, 0, 1, 49.4, -10.3);
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+    }
+    .center__bgshape__5{
+      background-position: 98% 15%;
+      background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Rectangle-53-1.svg);
+      // transform: matrix(1, 0, 0, 1, 24.7, 0);
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+    }
+    .center__bgshape__6{
+      background-position: 10% 5%;
+      background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Rectangle-56.svg);
+      // transform: matrix(1, 0, 0, 1, 5.8, -30.5);
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+    }
+    .center__bgshape__7{
+      background-position: 10.5% 49%;
+      background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-20.svg);
+      // transform: matrix(1, 0, 0, 1, 3, -3);
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+    }
+    .center__bgshape__8{
+      background-position: 10% 20%;
+      background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-19.svg);
+      // transform: matrix(1, 0, 0, 1, 6, -17);
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+    }
+    .center__bgshape__9{
+      background-position: 3% 64%;
+      background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-4.svg);
+      // transform: matrix(1, 0, 0, 1, 3, -8.4);
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
   &__items{
       &__container{
 
@@ -1577,6 +1665,91 @@
               font-size: 35px;
           }
       }
+      &__shapes__bg{
+        z-index: -5;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        // top: 0;
+        left: 0;
+        overflow: hidden;
+        // pointer-events: none;
+        // -webkit-perspective: 1200px;
+        // perspective: 1200px;
+        .center__bgshape__1{
+          background-position: 94.5% 70%;
+          background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-23.svg);
+          // transform: matrix(1, 0, 0, 1, -13.1, 4.1);
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
+        .center__bgshape__2{
+          background-position: 95% 50%;
+          background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-22.svg);
+          // transform: matrix(1, 0, 0, 1, 5.7, -0.6);
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
+        .center__bgshape__3{
+          background-position: 90% 40%;
+          background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-21.svg);
+          // transform: matrix(1, 0, 0, 1, 3, 4.1);
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
+        .center__bgshape__4{
+          background-position: 86% 15%;
+          background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Rectangle-51.svg);
+          // transform: matrix(1, 0, 0, 1, 49.4, -10.3);
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
+        .center__bgshape__5{
+          background-position: 98% 15%;
+          background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Rectangle-53-1.svg);
+          // transform: matrix(1, 0, 0, 1, 24.7, 0);
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
+        .center__bgshape__6{
+          background-position: 10% 5%;
+          background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Rectangle-56.svg);
+          // transform: matrix(1, 0, 0, 1, 5.8, -30.5);
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
+        .center__bgshape__7{
+          background-position: 10.5% 49%;
+          background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-20.svg);
+          // transform: matrix(1, 0, 0, 1, 3, -3);
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
+        .center__bgshape__8{
+          background-position: 10% 20%;
+          background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-19.svg);
+          // transform: matrix(1, 0, 0, 1, 6, -17);
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
+        .center__bgshape__9{
+          background-position: 3% 64%;
+          background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-4.svg);
+          // transform: matrix(1, 0, 0, 1, 3, -8.4);
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
+      }
   
       &__items{
           &__container{
@@ -1726,6 +1899,7 @@
       
       // }
   
+      
       .centers__container{
           position: relative;
           z-index: 0;
