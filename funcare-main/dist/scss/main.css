@@ -918,6 +918,12 @@ body {
   font-family: Fredoka One;
   src: url(../fonts/FredokaOne-Regular.ttf);
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header {
   width: 100%;
   position: relative;
@@ -1128,6 +1134,7 @@ body {
     top: 0;
     right: -100rem;
     background-color: #fff;
+    overflow-x: hidden;
   }
   .header__nav ul {
     display: flex;
@@ -1663,6 +1670,9 @@ body {
     padding: 0 0.5rem;
     font-size: 18px;
   }
+}
+.about {
+  overflow-x: hidden;
 }
 .about__wrapper {
   text-align: center;
@@ -2630,6 +2640,7 @@ body {
 }
 
 .banner__slider {
+  overflow-x: hidden;
   margin-top: 70px;
   margin-bottom: 0px;
 }
