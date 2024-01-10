@@ -1,28 +1,3 @@
-// KAY PPEN n bestfrnd
-const links = document.querySelectorAll(".faq__links h4");
-links.forEach((link) => {
-  link.addEventListener("click", () => {
-    const isActive = link.classList.contains("active");
-
-    // Deactivate all other elements
-    links.forEach((otherLink) => {
-      if (otherLink !== link) {
-        otherLink.nextElementSibling.classList.remove("down");
-        otherLink.querySelector("i").classList.remove("down", "rotate");
-        otherLink.classList.remove("active");
-      }
-    });
-
-    // Toggle the state for the clicked element only if it's not already active
-    if (!isActive) {
-      link.nextElementSibling.classList.toggle("down");
-      link.querySelector("i").classList.toggle("down");
-      link.querySelector("i").classList.toggle("rotate");
-      link.classList.toggle("active");
-    }
-  });
-});
-
 const burgerBtn = document.querySelector(".burger__btn")
 const headerNav = document.querySelector(".header__nav")
 const headerNavBg = document.querySelector(".header__nav__bg")
