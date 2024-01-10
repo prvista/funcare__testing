@@ -18,7 +18,7 @@
             font-family: $ff-secondary;
             font-size: 1.8rem;
             color: $clr-lightviolet;
-            max-width: 40rem;
+            max-width: 44rem;
             line-height: 2.7rem;
             margin: 0 auto;
             width: 100%;
@@ -41,11 +41,14 @@
         padding: 2rem;
         width: 100%;
             &:first-child{
-                padding-top: 3.5rem;
+                padding-top: 3.2rem;
+                i{
+                    font-size: 3.2rem;
+                }
             }
             &:nth-child(2){
                 padding-bottom: 3rem;
-                padding-top: 3.5rem;
+                padding-top: 3.2rem;
                 p{
                     padding-bottom: 1rem;
                 }
@@ -59,22 +62,22 @@
                 }
             }
             i{
-                font-size: 3rem;
-                color: yellow;
-                padding-bottom: 1rem;
+                font-size: 2.8rem;
+                color: #fee500;
+                padding-bottom: 1.5rem;
             }
             h5{
                 font-size: 20px;
                 color: $clr-light;
-                padding-bottom: 1rem;
+                padding-bottom: 1.6rem;
                 font-family: "Fredoka One", Sans-serif;
             }
             p{
-                font-size: 1.7rem;
+                font-size: 16px;
+                line-height: 1.4em;
                 font-family: $ff-secondary;
                 color: $clr-light;
-                // max-width: 40rem;
-                padding-bottom: 2rem;
+                padding-bottom: 1.6rem;
                 width: 100%;
             }
             h6{
@@ -114,7 +117,7 @@
                 a{
                     color: $clr-light;
                     font-family: $ff-secondary;
-                    font-size: 1.7rem;
+                    font-size: 1.6rem;
                     font-weight: 600;
                     &:hover{
                         color: $clr-dark;
@@ -259,19 +262,19 @@
             .item__container{
             .contact__wrapper__box{
                 display: flex;
-                gap: 2rem;
+                gap: 1.5rem;
                 .contact__item{
                     padding: 1rem;
                     &:first-child{
                         padding-top: 2rem;
+                        p {
+                            padding: 0.5rem 0.5rem 1rem;
+                        }
                     }
                     &:nth-child(2){
                         width: 100%;
                         padding-top: 2rem;
                         padding-bottom: 1rem;
-                            p{
-
-                            }
                     }
                     &:last-child{
                         width: 100%;
@@ -288,16 +291,17 @@
                     }
                     i{
                         font-size: 3rem;
-                        color: yellow;
-                        padding-bottom: 2rem;
+                        color: #fee500;
+                        padding-bottom: 1.6rem;
                     }
                     h5{
                         font-size: 2rem;
                         color: $clr-light;
-                        padding-bottom: 2rem;
+                        padding-bottom: 1rem;
                     }
                     p{
-                        font-size: 1.7rem;
+                        font-size: 16px;
+                        line-height: 1.4em;
                         font-family: $ff-secondary;
                         color: $clr-light;
                         padding-bottom: 1rem;
@@ -376,13 +380,14 @@
             }   
         }
         .mess__us{
-            padding: 68px 0px 26px 0px;
+            padding: 49px 0px 26px 0px;
             text-align: center;
             h4{
                 font-size: 2.2rem;
                 font-weight: 500;
                 color: $clr-orange;
                 font-family: Fredoka One;
+                padding-bottom: 0.3rem;
             }
             h2{
                 font-size: 3.5rem;
@@ -393,10 +398,10 @@
             p{
                 font-family: $ff-secondary;
                 font-size: 1.8rem;
-                padding-top: 1.8rem;
+                padding-top: 2.3rem;
                 color: $clr-lightviolet;
                 margin: 0  auto;
-                width: 100%;
+                max-width: 66rem;
                 
             }
         }
@@ -447,7 +452,7 @@
         }
         .g__maps{
             .map__container{
-                padding-top: 8rem;
+                padding-top: 12.2rem;
                 display: flex;
                 iframe{
                     width: 100%;
@@ -456,8 +461,12 @@
             }
         } 
     }
+    .item__container{
+        // line-height: unset;
+    }
     .contact__text{
         margin: unset;
+        // margin-bottom: 1rem;
     }
 }
 @media screen and (min-width:1025px) {
@@ -520,7 +529,7 @@
                             }
                             i{
                                 font-size: 3rem;
-                                color: yellow;
+                                color: #fee500;
                                 padding-bottom: 1rem;
                             }
                             h5{
