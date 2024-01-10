@@ -185,7 +185,7 @@ body {
 }
 
 .faq__banner {
-  z-index: 99999999999;
+  z-index: 999;
   position: relative;
 }
 
@@ -2802,12 +2802,8 @@ body {
 }
 
 .banner__slider {
-<<<<<<< HEAD
-=======
-  overflow-x: hidden;
->>>>>>> stephen
   margin-top: 70px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 .banner__slider__wrapper {
   align-items: center;
@@ -2836,7 +2832,8 @@ body {
   line-height: 1.3em;
   padding: 20px 0px 10px 0px;
   color: #0e9aff;
-  font-weight: 700;
+  font-weight: 500;
+  font-family: Fredoka One;
 }
 .banner__slider__wrapper .banner__slider__item .banner__slider__item__text p {
   color: #03cb8f;

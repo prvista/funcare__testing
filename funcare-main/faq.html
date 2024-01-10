@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -293,25 +295,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__wrapper">
@@ -387,33 +370,33 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="../funcare-main/dist/js/script.js"></script> -->
+    <script src="../funcare-main/dist/js/script.js"></script>
 
     <script>
       // KAY PPEN
-const links = document.querySelectorAll(".faq__links h4");
-links.forEach((link) => {
-  link.addEventListener("click", () => {
-    const isActive = link.classList.contains("active");
+      const links = document.querySelectorAll(".faq__links h4");
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          const isActive = link.classList.contains("active");
 
-    // Deactivate all other elements
-    links.forEach((otherLink) => {
-      if (otherLink !== link) {
-        otherLink.nextElementSibling.classList.remove("down");
-        otherLink.querySelector("i").classList.remove("down", "rotate");
-        otherLink.classList.remove("active");
-      }
-    });
+          // Deactivate all other elements
+          links.forEach((otherLink) => {
+            if (otherLink !== link) {
+              otherLink.nextElementSibling.classList.remove("down");
+              otherLink.querySelector("i").classList.remove("down", "rotate");
+              otherLink.classList.remove("active");
+            }
+          });
 
-    // Toggle the state for the clicked element only if it's not already active
-    if (!isActive) {
-      link.nextElementSibling.classList.toggle("down");
-      link.querySelector("i").classList.toggle("down");
-      link.querySelector("i").classList.toggle("rotate");
-      link.classList.toggle("active");
-    }
-  });
-});
+          // Toggle the state for the clicked element only if it's not already active
+          if (!isActive) {
+            link.nextElementSibling.classList.toggle("down");
+            link.querySelector("i").classList.toggle("down");
+            link.querySelector("i").classList.toggle("rotate");
+            link.classList.toggle("active");
+          }
+        });
+      });
     </script>
   </body>
 </html>
