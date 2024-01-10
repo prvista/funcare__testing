@@ -1,3 +1,5 @@
+/*colors*/
+/*breakpoints*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -640,6 +642,7 @@ body {
 }
 .footer__links__item ul li.active a {
   color: #00E0FF;
+  transition: 0.3s ease;
 }
 .footer__links__item ul li:hover a {
   color: #00E0FF;
@@ -725,6 +728,11 @@ body {
 }
 .footer__copyright a {
   color: #00E0FF;
+  transition: 0.3s ease;
+}
+.footer__copyright a:hover {
+  color: #ffffff;
+  transition: 0.3s ease;
 }
 .footer__chevronup {
   display: none;
@@ -965,6 +973,7 @@ body {
 .header__top .burger__btn i {
   color: #483290;
   font-size: 2rem;
+  cursor: pointer;
 }
 .header__top__img {
   display: flex;
@@ -992,6 +1001,7 @@ body {
   color: #483290;
   text-align: center;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 .header__top__contacts h2:hover {
   color: #398ffc;
@@ -1002,7 +1012,7 @@ body {
 }
 .header__nav {
   padding: 20px 12px 40px 12px;
-  position: absolute;
+  position: fixed;
   display: block;
   width: 80%;
   max-width: 100%;
@@ -1039,6 +1049,7 @@ body {
 .header__nav ul i {
   color: #483290;
   font-size: 20px;
+  cursor: pointer;
 }
 .header__nav .burger__btn__close {
   display: flex;
@@ -1179,7 +1190,8 @@ body {
   .header__desk {
     display: flex;
     justify-content: center;
-    z-index: 999;
+    z-index: 20;
+    position: relative;
     margin-top: 0px;
     margin-bottom: 120px;
     padding: 0px 0px 20px 0px;
@@ -1268,6 +1280,7 @@ body {
   .header__top__icon ul {
     display: flex;
     gap: 2.4rem;
+    margin-bottom: 1.1rem;
   }
   .header__top__icon ul li a i {
     font-size: 25px;
@@ -1332,6 +1345,9 @@ body {
   padding: 190px 0px 194px 0px;
   z-index: 0;
 }
+.banner__wrapper {
+  padding: 0 2rem;
+}
 .banner__title {
   width: 30rem;
 }
@@ -1360,7 +1376,7 @@ body {
 }
 .banner__button a {
   background-color: #fee500;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 15.5px;
   letter-spacing: 1px;
   display: inline-flex;
@@ -1371,15 +1387,14 @@ body {
   color: #3c297b;
   z-index: 9999;
   text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-.banner__button a:hover {
-  background-color: #03cb8f;
+  font-family: Fredoka One;
 }
 .banner__button a svg {
   width: 15px;
   height: 18px;
-  margin-left: 10px;
+}
+.banner__button a:hover {
+  background-color: #03cb8f;
 }
 .banner p {
   color: #03cb8f;
@@ -1406,11 +1421,13 @@ body {
     margin-top: -179px;
     margin-bottom: 0px;
     padding: 275px 0px 320px 0px;
-    z-index: -1;
     min-height: 55vh;
   }
+  .banner__wrapper {
+    padding-left: 2rem;
+  }
   .banner__wrapper p {
-    font-size: 36px;
+    font-size: 31px;
   }
   .banner__text {
     padding: 5rem 26rem 4rem 0;
@@ -1421,24 +1438,31 @@ body {
   .banner__text h2 {
     font-size: 20px;
   }
+  .banner__button {
+    z-index: 999;
+    position: relative;
+  }
   .banner__button a {
     padding: 25px 40px;
     font-size: 20px;
+    font-weight: 500;
   }
-  .banner p {
-    font-size: 26px;
+  .banner__button a:hover {
+    background-color: #03cb8f;
+  }
+  .banner__button a svg {
+    width: 1.2em;
+  }
+  .ho h5 {
+    text-align: center;
+    margin-bottom: 30rem;
+    z-index: 20;
+    position: relative;
+    width: 100%;
+    display: flex;
+    top: 0;
   }
 }
-.ho h5 {
-  text-align: center;
-  margin-bottom: 30rem;
-  z-index: 20;
-  position: relative;
-  width: 100%;
-  display: flex;
-  top: 0;
-}
-
 @media screen and (min-width: 1025px) {
   .banner {
     min-height: unset;
@@ -1454,6 +1478,13 @@ body {
     left: 0;
     max-width: 80%;
     min-height: 80%;
+    padding: 0 2rem;
+  }
+  .banner__wrapper__button a {
+    font-size: 26px;
+  }
+  .banner__wrapper__button a:hover {
+    background-color: #03cb8f;
   }
   .banner__text {
     padding: 2rem 31rem 3rem 0;
@@ -1472,9 +1503,6 @@ body {
     font-size: 22px;
     line-height: 35px;
   }
-  .banner__button a {
-    font-size: 26px;
-  }
   .banner .background__banner {
     background-position: unset;
   }
@@ -1483,22 +1511,25 @@ body {
     margin-top: 3rem;
   }
 }
-@media screen and (min-width: 1225px) {
+@media screen and (min-width: 1345px) {
   .banner__text {
     padding: 2rem 37rem 4rem 0;
+  }
+  .banner__wrapper {
+    padding: unset;
   }
   .banner__button {
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
-  .banner__button a:hover {
-    background-color: #03cb8f;
+  .banner__button a {
+    padding: 20px 40px;
+    font-size: 26px;
   }
   .banner__button a svg {
-    width: 15px;
+    width: 4rem;
     height: 18px;
-    margin-left: 10px;
   }
 }
 .banner__wave {
@@ -1673,29 +1704,31 @@ body {
 }
 .about {
   overflow-x: hidden;
+  padding-bottom: 7.8rem;
 }
 .about__wrapper {
   text-align: center;
 }
 .about__text .about__text__title {
-  font-family: "Fredoka", sans-serif;
+  font-family: Fredoka One;
 }
 .about__text .about__text__title h4 {
   color: #ff7223;
   font-size: 23px;
-  font-weight: 700;
+  font-weight: 500;
 }
 .about__text .about__text__title h2 {
   color: #483290;
   font-size: 32px;
   font-weight: 600;
+  font-weight: 500;
 }
 .about__text p {
   color: #7f70b1;
-  line-height: 25px;
   margin: 0 auto;
   padding: 1.6rem;
-  font-size: 16px;
+  line-height: 1.5em;
+  padding: 16px;
 }
 .about__image {
   justify-content: center;
@@ -1923,6 +1956,7 @@ body {
     line-height: 35px;
     padding-top: 3rem;
     width: 103rem;
+    padding-bottom: 6rem;
   }
   .about__image .about__image__top .about__shapes__top img:first-child {
     top: -211px;
@@ -1952,7 +1986,7 @@ body {
   }
   .about__image .about__image__bottom .about__kids__bottom img:first-child {
     padding: 0;
-    left: 50px;
+    left: 68px;
     z-index: 995;
     position: relative;
   }
@@ -2266,6 +2300,78 @@ body {
   }
 }
 
+.center__shapes__bg {
+  z-index: -5;
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+}
+.center__shapes__bg .center__bgshape__1 {
+  background-position: 94.5% 70%;
+  background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-23.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.center__shapes__bg .center__bgshape__2 {
+  background-position: 95% 50%;
+  background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-22.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.center__shapes__bg .center__bgshape__3 {
+  background-position: 90% 40%;
+  background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-21.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.center__shapes__bg .center__bgshape__4 {
+  background-position: 86% 15%;
+  background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Rectangle-51.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.center__shapes__bg .center__bgshape__5 {
+  background-position: 98% 15%;
+  background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Rectangle-53-1.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.center__shapes__bg .center__bgshape__6 {
+  background-position: 10% 5%;
+  background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Rectangle-56.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.center__shapes__bg .center__bgshape__7 {
+  background-position: 10.5% 49%;
+  background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-20.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.center__shapes__bg .center__bgshape__8 {
+  background-position: 10% 20%;
+  background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-19.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.center__shapes__bg .center__bgshape__9 {
+  background-position: 3% 64%;
+  background-image: url(https://ld-wp73.template-help.com/wordpress/prod_26992/v4/wp-content/uploads/2019/12/Vector-4.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
 .center__wrapper {
   width: 100%;
 }
@@ -2358,6 +2464,7 @@ body {
 }
 .center .item__image img {
   border-radius: 12px 12px 0px 0px;
+  width: 100%;
 }
 .center .item__text {
   border-radius: 0px 0px 12px 12px;
@@ -2413,6 +2520,15 @@ body {
   transition: 0.4s ease;
 }
 @media screen and (min-width: 767px) {
+  .center__shapes__bg {
+    z-index: -5;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+  }
   .center__wrapper {
     width: 100%;
   }
@@ -2640,15 +2756,12 @@ body {
 }
 
 .banner__slider {
-<<<<<<< HEAD
-  overflow-x: hidden;
-=======
->>>>>>> stephen
   margin-top: 70px;
   margin-bottom: 0px;
 }
 .banner__slider__wrapper {
   align-items: center;
+  cursor: pointer;
 }
 .banner__slider__wrapper .banner__slider__item {
   justify-content: center;
@@ -2803,7 +2916,6 @@ body {
     padding: 150px 0px 55px 0px;
   }
   .lower__wave__text .lower__wave__text__left {
-    padding: 0px 27px 0px 0;
     position: relative;
     width: 108%;
     flex-wrap: wrap;
@@ -2843,16 +2955,20 @@ body {
 }
 .banner__slider__shapes__wrapper svg:first-child {
   transform: translateX(541px) translateY(-479px);
+  z-index: -9999;
+  position: relative;
 }
 .banner__slider__shapes__wrapper svg:nth-child(2) {
   position: absolute;
   display: flex;
   top: -412px;
   right: -54px;
-  z-index: 2;
+  z-index: -9999;
 }
 .banner__slider__shapes__wrapper svg:nth-child(3) {
   transform: translateX(-103px) translateY(-389px);
+  z-index: -9999;
+  position: relative;
 }
 .banner__slider__shapes__wrapper svg:nth-child(4) {
   position: absolute;
@@ -2863,17 +2979,23 @@ body {
   transform: translateY(-304px);
   position: absolute;
   right: 25px;
+  z-index: -9999;
 }
 .banner__slider__shapes__wrapper svg:nth-child(6) {
   transform: translateX(-90px) translateY(-298px);
+  z-index: -9999;
+  position: relative;
 }
 .banner__slider__shapes__wrapper svg:nth-child(7) {
   transform: translateY(-256px);
   position: absolute;
   right: 23px;
+  z-index: -9999;
 }
 .banner__slider__shapes__wrapper svg:last-child {
   transform: translateX(-200px) translateY(-327px);
+  z-index: -9999;
+  position: relative;
 }
 
 @media screen and (min-width: 1025px) {
@@ -2883,6 +3005,8 @@ body {
   }
   .banner__slider__shapes__wrapper svg:first-child {
     transform: translateX(454px) translateY(-516px);
+    z-index: -9999;
+    position: relative;
   }
   .banner__slider__shapes__wrapper svg:nth-child(2) {
     position: absolute;
@@ -2922,6 +3046,10 @@ body {
     transform: translateX(149px) translateY(-376px);
   }
 }
+.padding__none {
+  padding: 0;
+}
+
 .contact__us {
   text-align: center;
   padding-top: 4.5rem;
@@ -3005,6 +3133,7 @@ body {
   font-weight: 500;
   font-family: Fredoka One;
   padding-top: 0.5rem;
+  cursor: pointer;
 }
 .contact .item__container .contact__item h6:hover {
   transition: 0.5s ease;
@@ -3150,7 +3279,7 @@ body {
   z-index: -9999;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 760px) {
   .contact__wrapper .item__container .contact__wrapper__box {
     display: flex;
     gap: 2rem;

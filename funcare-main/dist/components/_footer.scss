@@ -42,6 +42,7 @@
                     &.active{
                         a{
                             color: $clr-blue;
+                            transition: 0.3s ease;
                         }
                     }
                     &:hover a{
@@ -144,6 +145,13 @@
         }
         a{
             color: $clr-blue;
+            transition: 0.3s ease;
+
+
+            &:hover{
+                color: #ffffff;
+                transition: 0.3s ease;
+            }
         }
     }
     &__chevronup{

@@ -83,10 +83,12 @@
                 font-weight: 500;
                 font-family: Fredoka One;
                 padding-top: 0.5rem;
+                cursor: pointer;
             }
             h6:hover{
                 transition: 0.5s ease;
                 color: black;
+
             }
             // a{
             //     text-decoration: underline;
@@ -251,7 +253,7 @@
     z-index: -9999;
 }
 
- @include mediaQuery($break-mc){
+ @include mediaQuery($break-md){
     .contact{
         &__wrapper{
             .item__container{

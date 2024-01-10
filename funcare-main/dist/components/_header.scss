@@ -55,7 +55,8 @@
         .burger__btn{
             i{
                 color: #483290; 
-                font-size: 2rem;      
+                font-size: 2rem;     
+                cursor: pointer; 
             }
         }
 
@@ -87,6 +88,7 @@
                 color: #483290;
                 text-align: center;
                 transition: 0.5s ease;
+                cursor: pointer;
                 &:hover{
                     color: #398ffc;
                     transition: 0.5s ease;
@@ -102,7 +104,7 @@
     &__nav{
         // order: 992;
         padding: 20px 12px 40px 12px;
-        position: absolute;
+        position: fixed;
         display: block;
         width: 80%;
         max-width: 100%;
@@ -145,6 +147,7 @@
             i{
                 color: #483290; 
                 font-size: 20px;
+                cursor: pointer;
             }
         }
         .burger__btn__close{
@@ -310,7 +313,8 @@
         &__desk{
             display: flex;
             justify-content: center;
-            z-index: 999;
+            z-index: 20;
+            position: relative;
             // position: relative;
             
 
@@ -412,6 +416,7 @@
                 ul{
                     display: flex;
                     gap: 2.4rem;
+                    margin-bottom: 1.1rem;
                     li{
                         a{
                             i{
